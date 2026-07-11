@@ -1,0 +1,12 @@
+{
+  "name": "samvinas-help",
+  "version": "1.0.0",
+  "description": "Template help-content site for Samvinas events",
+  "type": "module",
+  "scripts": {
+    "build": "node build.js"
+  },
+  "dependencies": {
+    "marked": "^12.0.0"
+  }
+}

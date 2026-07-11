@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="{{lang}}">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{title}}</title>
+<style>
+  :root { --brand: {{brandColor}}; --ink: #1a2230; --dim: #5a6472; --line: #e6e9ee; --bg: #fff; }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; background: var(--bg); color: var(--ink);
+    font: 17px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    -webkit-text-size-adjust: 100%;
+  }
+  .page { max-width: 720px; margin: 0 auto; padding: 24px 20px 64px; }
+  header.site { border-bottom: 1px solid var(--line); padding: 14px 20px; }
+  header.site .inner { max-width: 720px; margin: 0 auto; display: flex; align-items: baseline; gap: 10px; }
+  header.site a.home { color: var(--brand); font-weight: 700; text-decoration: none; }
+  header.site .aud { color: var(--dim); font-size: .85rem; }
+  main :first-child { margin-top: 0; }
+  h1 { font-size: 1.7rem; line-height: 1.25; margin: .2em 0 .5em; }
+  h2 { font-size: 1.25rem; margin: 1.6em 0 .4em; }
+  h3 { font-size: 1.05rem; margin: 1.4em 0 .3em; }
+  p, ul, ol { margin: .6em 0; }
+  ul, ol { padding-left: 1.4em; }
+  li { margin: .25em 0; }
+  a { color: var(--brand); }
+  code { background: #f2f4f7; padding: .1em .35em; border-radius: 4px; font-size: .9em; }
+  blockquote { margin: 1em 0; padding: .4em 1em; border-left: 3px solid var(--brand); color: var(--dim); }
+  hr { border: none; border-top: 1px solid var(--line); margin: 2em 0; }
+  footer.site { max-width: 720px; margin: 0 auto; padding: 24px 20px; color: var(--dim); font-size: .85rem; border-top: 1px solid var(--line); }
+  @media (prefers-color-scheme: dark) {
+    :root { --ink: #e8ebf0; --dim: #9aa4b2; --line: #2a313c; --bg: #14181e; }
+    code { background: #232a33; }
+  }
+</style>
+</head>
+<body>
+<header class="site"><div class="inner"><a class="home" href="{{homeHref}}">{{siteTitle}}</a><span class="aud">{{audienceLabel}}</span></div></header>
+<main class="page">
+{{content}}
+</main>
+<footer class="site">{{footer}}</footer>
+</body>
+</html>

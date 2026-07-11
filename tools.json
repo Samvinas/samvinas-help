@@ -1,0 +1,25 @@
+{
+  "site": {
+    "title": "Samvinas Help",
+    "brandColor": "#3E76B8",
+    "footer": "Help content for Samvinas events. Edit the Markdown in <code>content/</code> to make it your own."
+  },
+  "tools": [
+    { "slug": "brainstorm",         "name": "Brainstorm",         "blurb": "Collect lots of ideas quickly." },
+    { "slug": "voting",             "name": "Voting",             "blurb": "Surface the group's favourites with stars." },
+    { "slug": "ranking",            "name": "Ranking",            "blurb": "Put items in order of preference." },
+    { "slug": "clustering",         "name": "Clustering",         "blurb": "Group related ideas into themes." },
+    { "slug": "value-doability",    "name": "Value / Doability",  "blurb": "Score ideas on two dimensions and plot them." },
+    { "slug": "stakeholder-map",    "name": "Stakeholder Map",    "blurb": "Map people or groups on two axes." },
+    { "slug": "signup",             "name": "Sign Up",            "blurb": "Let people put their name to items." },
+    { "slug": "wordcloud",          "name": "Word Cloud",         "blurb": "See the words the group used most." },
+    { "slug": "brainwriting",       "name": "Brain Writing",      "blurb": "Spark new ideas from each other's provocations." },
+    { "slug": "rich-brainstorm",    "name": "Rich Brainstorm",    "blurb": "Brainstorm with formatting and freehand sketches." },
+    { "slug": "tagging",            "name": "Tagging",            "blurb": "Sort items into categories." },
+    { "slug": "workspace-launcher", "name": "Personal Workspace", "blurb": "Give everyone their own mini-flow." },
+    { "slug": "five-whys",          "name": "Five Whys",          "blurb": "Dig to a root cause by asking \"why\" repeatedly." },
+    { "slug": "breakout-groups",    "name": "Breakout Groups",    "blurb": "Split into small groups with a shared workspace." },
+    { "slug": "elaboration",        "name": "Elaboration",        "blurb": "Develop chosen ideas in depth." },
+    { "slug": "instructions",       "name": "Instructions",       "blurb": "A page of instructions or information for participants." }
+  ]
+}
