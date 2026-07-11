@@ -9,6 +9,14 @@ forward.
 - You can see how many votes you have left at the top.
 - Items rise as they gather votes, so the group's favourites surface live.
 
+## Seeing the results
+
+If it's available, the **Results** tab lets you watch the totals build in real
+time. It's a nice view — but try to **cast your own votes first**, before you
+study the running totals. Seeing which ideas are already ahead can quietly nudge
+you toward the crowd; giving yourself a moment to decide on your own keeps your
+vote honest and the group's thinking diverse.
+
 ## Making your votes count
 
 - Vote for what genuinely excites you or best meets the group's criteria — not
