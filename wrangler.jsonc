@@ -1,0 +1,17 @@
+{
+  // Cloudflare Workers config for the static help site.
+  // Cloudflare's build runs `npm run build` (Markdown → dist/) then serves dist/
+  // as static assets via `wrangler deploy`. Committed so builds are reproducible.
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "samvinas-help",
+  "compatibility_date": "2026-07-11",
+  "assets": {
+    "directory": "dist"
+  },
+  "observability": {
+    "enabled": true
+  }
+  // To attach the custom domain declaratively instead of via the dashboard, add:
+  //   "routes": [{ "pattern": "help.samvinas.com", "custom_domain": true }]
+  // On the next deploy Cloudflare creates the proxied DNS record automatically.
+}
