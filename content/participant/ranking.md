@@ -9,6 +9,13 @@ group average.
 - Your ranking is yours; you don't have to agree with anyone else.
 - The group's average order updates as people rank.
 
+## Seeing the results
+
+The **Results** tab shows the group's average order building in real time. As
+with any group vote, it's best to **settle on your own ranking first**, then
+look — seeing what's already on top can anchor you to it, and the exercise works
+best when everyone's independent judgement goes in first.
+
 ## Tips
 
 - Rank on the criterion the facilitator set (impact, feasibility, fit…).
