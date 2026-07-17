@@ -20,6 +20,7 @@
     { "slug": "five-whys",          "name": "Five Whys",          "blurb": "Dig to a root cause by asking \"why\" repeatedly." },
     { "slug": "breakout-groups",    "name": "Breakout Groups",    "blurb": "Split into small groups with a shared workspace." },
     { "slug": "elaboration",        "name": "Elaboration",        "blurb": "Develop chosen ideas in depth." },
+    { "slug": "alou",               "name": "ALoU",               "blurb": "Weigh an option: Advantages, Limitations & Unique Features." },
     { "slug": "instructions",       "name": "Instructions",       "blurb": "A page of instructions or information for participants." }
   ]
 }
