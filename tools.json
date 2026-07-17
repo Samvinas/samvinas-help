@@ -23,6 +23,7 @@
     { "slug": "alou",               "name": "ALoU",               "blurb": "Weigh an option: Advantages, Limitations & Unique Features." },
     { "slug": "lco",                "name": "LCO",                "blurb": "React to an option: Likes, Concerns & Opportunities." },
     { "slug": "pmi",                "name": "PMI",                "blurb": "A quick balanced scan: Plus, Minus & Interesting." },
+    { "slug": "evaluation-matrix",  "name": "Evaluation Matrix",  "blurb": "Score options against several criteria and compare them." },
     { "slug": "instructions",       "name": "Instructions",       "blurb": "A page of instructions or information for participants." }
   ]
 }
