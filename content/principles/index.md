@@ -32,6 +32,9 @@ around the same stages.
 
 - **[The four stages](/principles/four-stages.html)** — what each stage is
   for, what "done" looks like in each, and the assessing habit at the centre.
+- **[The process at a glance](/principles/process-at-a-glance.html)** — all
+  six steps side by side, each with a starting condition, so you can tell
+  where your work should enter the process.
 
 ## Two habits that make it work
 
@@ -39,6 +42,15 @@ around the same stages.
   evaluation is postponed, not abandoned, and what that does to a group.
 - **[Framing problems as questions](/principles/problems-as-questions.html)**
   — turning verdicts into invitations: *"How might we…?"*
+
+## Lineage
+
+None of this is our invention. CPS began in the 1950s with Alex Osborn — the
+adman who coined "brainstorming" — and Sid Parnes, and has been refined by
+seventy years of practitioners and researchers since: Ruth Noller, Roger
+Firestien, and Gerard Puccio, Marie Mance and Mary Murdock, among many
+others. These pages paraphrase that shared tradition; the tools in Samvinas
+are built to run it.
 
 ---
 

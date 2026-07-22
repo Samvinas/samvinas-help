@@ -12,6 +12,9 @@ taking part in one, your guides live under
 - **[Principles refresher](/principles/)** — the ideas the whole process runs
   on: diverge/converge, the four stages, deferring judgement, framing
   problems as questions.
+- **[The process at a glance](/principles/process-at-a-glance.html)** — six
+  steps side by side, each with a starting condition and an outcome: use it
+  to decide where your event enters the process.
 
 ## The toolbox, by what each tool does
 

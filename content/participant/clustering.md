@@ -14,3 +14,5 @@ list into a handful of themes.
 - There's no single right grouping; look for patterns that are useful to the
   group.
 - A good cluster name captures what its items have in common at a glance.
+- The best names *do* something — a verb phrase like "run a pilot in March"
+  says what the cluster wants to become, where a one-word label just files it.

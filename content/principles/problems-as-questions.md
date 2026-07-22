@@ -16,6 +16,20 @@ Each word is doing work:
   wilder ones can surface.
 - **we** makes it shared — the problem stops belonging to whoever raised it.
 
+"How might we…?" also has siblings worth rotating through when a frame feels
+stiff: *"How to…?"*, *"In what ways might we…?"*, and — for deliberately
+widening a hunt — *"What might be all the…?"*.
+
+## Before the problem: the wish
+
+Question stems have an upstream relative. Early in
+[Clarify](/principles/four-stages.html), before anything is defined, the
+right frame isn't a question but a **wish**: *"I wish…"*, *"It would be
+great if…"*. A wish does for goals what "How might we…?" does for problems —
+it states an appetite without committing to a solution, so many can be
+voiced before one is chosen. Once a wish is picked, the question stems take
+over.
+
 ## Getting the altitude right
 
 A question can be framed too broad or too narrow. *"How might we improve the

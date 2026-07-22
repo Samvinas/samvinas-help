@@ -33,10 +33,16 @@ develop-and-overcome cycle.
 
 ## Facilitation tips
 
+- Open with the **solution story**: before the sections fill up, have the
+  idea's champion describe it in the present tense, as if it's already
+  running — *"What I see us doing is…"*. The detail attracts genuine pluses
+  and flushes out the real concerns.
 - Enforce the order. The whole point is that concerns come *after* the group
   has invested in the idea's strengths — judgement becomes constructive
   instead of fatal.
 - Insist concerns are questions. "It's too expensive" closes the topic;
   "How might we bring the cost down?" opens it.
 - Not every concern needs an overcome — ask the group which concerns are
-  load-bearing and spend the time there.
+  load-bearing and spend the time there. Then take those **one at a time**: a
+  card is done when every load-bearing concern has an overcome, or the group
+  has consciously decided it can live with it.
