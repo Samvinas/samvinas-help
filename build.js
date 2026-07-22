@@ -35,9 +35,12 @@ function titleOf(md, fallback) {
   return m ? m[1].trim() : fallback;
 }
 
-function audienceLabel(rel) {
-  if (rel.startsWith('participant/')) return 'For participants';
-  if (rel.startsWith('facilitator/')) return 'For facilitators';
+// The audience chip in the header. On facilitator pages it links back to the
+// facilitator landing page (dist/facilitator/index.html — served at /facilitator/).
+function audienceSlot(rel, prefix) {
+  if (rel.startsWith('participant/')) return '<span class="aud">For participants</span>';
+  if (rel === 'facilitator/index.md') return '<span class="aud">For facilitators</span>';
+  if (rel.startsWith('facilitator/')) return `<a class="aud" href="${prefix}facilitator/">For facilitators</a>`;
   return '';
 }
 
@@ -57,7 +60,7 @@ function render(rel, md) {
     .replaceAll('{{lang}}', site.lang || 'en')
     .replaceAll('{{siteTitle}}', site.title || 'Help')
     .replaceAll('{{title}}', `${titleOf(md, rel)} — ${site.title || 'Help'}`)
-    .replaceAll('{{audienceLabel}}', audienceLabel(rel))
+    .replaceAll('{{audienceSlot}}', audienceSlot(rel, prefix))
     .replaceAll('{{homeHref}}', prefix)
     .replaceAll('{{assetsHref}}', prefix)
     .replaceAll('{{footer}}', site.footer || '')
@@ -125,5 +128,20 @@ for (const tool of cfg.tools || []) {
   }
 }
 
+// 3) Tool index pages, one per mode (facilitator side), generated from
+//    tools.json so they can never drift from the tool list. Author a
+//    content/facilitator/tools-<mode>.md to override one entirely.
+for (const [mode, meta] of Object.entries(cfg.modes || {})) {
+  const rel = `facilitator/tools-${mode}.md`;
+  if (written.has(rel)) continue;
+  const tools = (cfg.tools || []).filter(t => t.mode === mode);
+  if (!tools.length) continue;
+  const md = `# ${meta.title}\n\n${meta.intro}\n\n` +
+    tools.map(t => `- **[${t.name}](/facilitator/${t.slug}.html)** — ${t.blurb}`).join('\n') +
+    `\n\n---\n\n[← Back to the facilitator guide](/facilitator/)\n`;
+  render(rel, md);
+  generated++;
+}
+
 const authored = written.size;
-console.log(`Built ${authored + generated} pages → dist/  (${authored} authored, ${generated} starter)`);
+console.log(`Built ${authored + generated} pages → dist/  (${authored} authored, ${generated} generated)`);

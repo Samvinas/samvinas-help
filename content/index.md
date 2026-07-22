@@ -8,13 +8,22 @@ tailored them, translated them, or added their own guidance.
 
 ## For facilitators
 
-- [Setting up an event](facilitator/getting-started.html)
-- Tool guides live at `facilitator/<tool>.html`
+- **[The facilitator guide](/facilitator/)** — start here: setting up an
+  event, plus the full toolbox indexed by what each tool does
+  ([generating](/facilitator/tools-generating.html) ·
+  [focusing](/facilitator/tools-focusing.html) ·
+  [organising](/facilitator/tools-organising.html)).
 
 ## For participants
 
 - Tool guides live at `participant/<tool>.html` — you'll usually reach the right
   one by tapping the **?** in the top corner while using a tool.
+
+## The ideas behind it
+
+- **[Principles refresher](/principles/)** — the two-minute version of
+  Creative Problem Solving: diverge and converge, the four stages, deferring
+  judgement, and framing problems as questions.
 
 ---
 
