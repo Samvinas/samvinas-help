@@ -50,8 +50,58 @@ function homeHref(rel) {
   return depth === 0 ? './' : '../'.repeat(depth);
 }
 
+const escAttr = (s) => String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/"/g, '&quot;');
+
+/**
+ * Breadcrumb trail (WAI-ARIA APG pattern: nav landmark, ol, aria-current).
+ * Reflects the site hierarchy, not the visitor's journey:
+ *   facilitator tool  → Home › Facilitator guide › <Mode index> › <Tool>
+ *   facilitator page  → Home › Facilitator guide › <Page>
+ *   participant tool  → Home › <Tool>
+ *   principles page   → Home › Principles › <Page>
+ * The root page gets no trail. Labels for authored pages come from the h1,
+ * shortened at " — " (house style: "CSV export — for facilitators").
+ */
+function breadcrumb(rel, prefix, pageTitle) {
+  if (rel === 'index.md') return '';
+  const short = pageTitle.split(' — ')[0].trim();
+  const toolBySlug = new Map((cfg.tools || []).map(t => [t.slug, t]));
+  const page = rel.replace(/^(facilitator|participant|principles)\//, '').replace(/\.md$/, '');
+  const crumbs = [{ label: 'Home', href: prefix }];
+
+  if (rel.startsWith('facilitator/')) {
+    if (page === 'index') crumbs.push({ label: 'Facilitator guide' });
+    else {
+      crumbs.push({ label: 'Facilitator guide', href: `${prefix}facilitator/` });
+      const mode = page.match(/^tools-(\w+)$/)?.[1];
+      const tool = toolBySlug.get(page);
+      if (mode && cfg.modes?.[mode]) crumbs.push({ label: cfg.modes[mode].title });
+      else if (tool?.mode && cfg.modes?.[tool.mode]) {
+        crumbs.push({ label: cfg.modes[tool.mode].title, href: `${prefix}facilitator/tools-${tool.mode}.html` });
+        crumbs.push({ label: tool.name });
+      } else crumbs.push({ label: tool?.name || short });
+    }
+  } else if (rel.startsWith('participant/')) {
+    crumbs.push({ label: toolBySlug.get(page)?.name || short });
+  } else if (rel.startsWith('principles/')) {
+    if (page === 'index') crumbs.push({ label: 'Principles' });
+    else {
+      crumbs.push({ label: 'Principles', href: `${prefix}principles/` });
+      crumbs.push({ label: short });
+    }
+  } else crumbs.push({ label: short });
+
+  const items = crumbs.map((c, i) =>
+    i === crumbs.length - 1
+      ? `<li aria-current="page">${escAttr(c.label)}</li>`
+      : `<li><a href="${escAttr(c.href)}">${escAttr(c.label)}</a></li>`
+  ).join('');
+  return `<nav class="crumbs" aria-label="Breadcrumb"><div class="inner"><ol>${items}</ol></div></nav>`;
+}
+
 function render(rel, md) {
   const prefix = homeHref(rel);
+  const pageTitle = titleOf(md, rel);
   // Authors write site-root paths (src="/assets/…", href="/participant/x.html");
   // rewrite them relative to this page's depth so the site works from any host
   // path (GitHub Pages project sites live under /<repo>/, not /).
@@ -59,8 +109,9 @@ function render(rel, md) {
   const out = template
     .replaceAll('{{lang}}', site.lang || 'en')
     .replaceAll('{{siteTitle}}', site.title || 'Help')
-    .replaceAll('{{title}}', `${titleOf(md, rel)} — ${site.title || 'Help'}`)
+    .replaceAll('{{title}}', `${pageTitle} — ${site.title || 'Help'}`)
     .replaceAll('{{audienceSlot}}', audienceSlot(rel, prefix))
+    .replaceAll('{{breadcrumb}}', breadcrumb(rel, prefix, pageTitle))
     .replaceAll('{{homeHref}}', prefix)
     .replaceAll('{{assetsHref}}', prefix)
     .replaceAll('{{footer}}', site.footer || '')

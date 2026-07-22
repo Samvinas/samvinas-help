@@ -61,6 +61,15 @@ header.site .aud { color: var(--text-dim); font-size: .85rem; margin-left: auto;
 header.site a.aud { text-decoration: none; }
 header.site a.aud:hover { text-decoration: underline; }
 
+/* ---- breadcrumb ----------------------------------------------------------- */
+nav.crumbs { font-size: .85rem; }
+nav.crumbs .inner { max-width: 720px; margin: 0 auto; padding: 12px 20px 0; }
+nav.crumbs ol { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; column-gap: .45em; }
+nav.crumbs li { color: var(--text-dim); }
+nav.crumbs li + li::before { content: "›"; margin-right: .45em; color: var(--text-dim); }
+nav.crumbs a { color: var(--link); text-decoration: none; }
+nav.crumbs a:hover { text-decoration: underline; }
+
 /* ---- content ------------------------------------------------------------- */
 .page { max-width: 720px; margin: 0 auto; padding: 24px 20px 64px; }
 main :first-child { margin-top: 0; }
