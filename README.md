@@ -27,20 +27,23 @@ exactly those files.
 
 1. **Use this template** (green button on GitHub) or clone the repo.
 2. Edit the Markdown in **`content/`** — that's all the words. You never touch
-   HTML; the shared look lives in `template.html`.
+   HTML; layout lives in `template.html` + `assets/css/base.css`.
    - `content/participant/<tool>.md` and `content/facilitator/<tool>.md`
    - `content/facilitator/getting-started.md`, `content/index.md`
    - Any tool without a Markdown file gets a clean starter page automatically
      (see `tools.json` for the tool list) — create the file to customise it.
 3. Translate freely — set `"lang"` in `tools.json` `site` and write in your
    language.
-4. Tweak brand colour / title / footer in **`tools.json`**.
+4. **Re-brand** — colours in `assets/css/theme.css`, logo + favicon in
+   `assets/brand/`, title/footer in `tools.json`. Full guide: **`THEMING.md`**
+   (humans) / **`THEMING-AI.md`** (AI assistants). The build computes WCAG 2.2
+   AA contrast on your colours and refuses to ship an unreadable theme.
 
 ## Build locally
 
 ```bash
 npm install
-npm run build      # → dist/
+npm run build      # contrast check, then → dist/
 # preview: open dist/index.html, or `npx serve dist`
 ```
 
@@ -63,9 +66,17 @@ runtime dependencies.
 ## Structure
 
 ```
-tools.json                  tool list + site config (title, colour, language)
-template.html               shared page shell (inline CSS)
-build.js                    Markdown → HTML into dist/
+tools.json                  tool list + site config (title, footer, language)
+template.html               shared page shell (landmarks, skip link — no CSS)
+build.js                    Markdown → HTML into dist/, copies assets/
+check-theme.js              WCAG contrast gate, runs first in `npm run build`
+THEMING.md / THEMING-AI.md  how to re-brand (human / AI-agent editions)
+assets/
+  css/theme.css             every colour, as documented tokens  ← edit to re-brand
+  css/base.css              layout & structure                  ← don't edit
+  brand/                    logo.svg + favicon.svg              ← replace with yours
+  images/diagrams/          concept art orgs may replace (diverge-converge.svg, …)
+  images/screenshots/       app screenshots (track the product, not the brand)
 content/                    the words you edit (Markdown)
   index.md
   participant/<tool>.md

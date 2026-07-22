@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 300" role="img" aria-labelledby="dc-title dc-desc">
+  <title id="dc-title">Diverge, then converge</title>
+  <desc id="dc-desc">Two triangles side by side. The first widens from a single point to its
+  broadest edge, labelled Diverge: generate many options. The second narrows from a broad
+  edge back to a single point, labelled Converge: make choices. Creative work alternates
+  between the two phases.</desc>
+  <!--
+    Diagrams carry their own background so they stay readable when a reader's
+    OS is in dark mode (the page behind them turns dark; the diagram does not).
+    Replace this file to substitute your organisation's own version of the
+    diverge/converge model — keep the filename so existing pages pick it up.
+  -->
+  <rect x="1" y="1" width="638" height="298" rx="10" fill="#EBEEEC" stroke="#C4CDC9"/>
+  <!-- diverge -->
+  <polygon points="60,140 300,52 300,228" fill="#2FA0AC" opacity="0.85"/>
+  <!-- converge -->
+  <polygon points="340,52 340,228 580,140" fill="#C6763A" opacity="0.85"/>
+  <!-- phase boundary -->
+  <line x1="320" y1="44" x2="320" y2="236" stroke="#7E8B87" stroke-dasharray="4 5" stroke-width="1.5"/>
+  <!-- labels -->
+  <g font-family="-apple-system, 'Helvetica Neue', 'Segoe UI', Arial, sans-serif">
+    <text x="180" y="262" text-anchor="middle" font-size="21" font-weight="700" fill="#161D20">Diverge</text>
+    <text x="180" y="284" text-anchor="middle" font-size="14" fill="#47555A">generate many options</text>
+    <text x="460" y="262" text-anchor="middle" font-size="21" font-weight="700" fill="#161D20">Converge</text>
+    <text x="460" y="284" text-anchor="middle" font-size="14" fill="#47555A">make choices</text>
+    <text x="320" y="30" text-anchor="middle" font-size="13" letter-spacing="2" fill="#47555A">ONE CYCLE OF CREATIVE WORK</text>
+  </g>
+</svg>

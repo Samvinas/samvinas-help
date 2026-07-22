@@ -48,14 +48,18 @@ function homeHref(rel) {
 }
 
 function render(rel, md) {
-  const html = marked.parse(md);
+  const prefix = homeHref(rel);
+  // Authors write site-root paths (src="/assets/…", href="/participant/x.html");
+  // rewrite them relative to this page's depth so the site works from any host
+  // path (GitHub Pages project sites live under /<repo>/, not /).
+  const html = marked.parse(md).replace(/(href|src)="\/(?!\/)/g, `$1="${prefix}`);
   const out = template
     .replaceAll('{{lang}}', site.lang || 'en')
-    .replaceAll('{{brandColor}}', site.brandColor || '#3E76B8')
     .replaceAll('{{siteTitle}}', site.title || 'Help')
     .replaceAll('{{title}}', `${titleOf(md, rel)} — ${site.title || 'Help'}`)
     .replaceAll('{{audienceLabel}}', audienceLabel(rel))
-    .replaceAll('{{homeHref}}', homeHref(rel))
+    .replaceAll('{{homeHref}}', prefix)
+    .replaceAll('{{assetsHref}}', prefix)
     .replaceAll('{{footer}}', site.footer || '')
     .replaceAll('{{content}}', html);
   const dest = path.join(OUT, rel.replace(/\.md$/, '.html'));
@@ -100,6 +104,9 @@ function walk(dir, base = '') {
 fs.rmSync(OUT, { recursive: true, force: true });
 fs.mkdirSync(OUT, { recursive: true });
 fs.writeFileSync(path.join(OUT, '.nojekyll'), ''); // serve dist/ as-is on GitHub Pages
+
+// Static assets (stylesheets, brand files, images) are copied through verbatim.
+fs.cpSync(path.join(ROOT, 'assets'), path.join(OUT, 'assets'), { recursive: true });
 
 const written = new Set();
 

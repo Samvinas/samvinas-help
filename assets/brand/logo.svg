@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 23 22" width="23" height="22" role="img" aria-label="Samvinas">
+  <!--
+    Samvinas five-bar mark ("the temperature of a group").
+    Replace this file with your own logo to re-brand the site — any SVG (or PNG)
+    works; it is displayed 22px tall in the header next to the site title.
+    The <style> block below flips the bar colour in dark mode; a replacement
+    logo should either do the same or use colours that read on both the light
+    and dark header backgrounds (see THEMING.md § Logo).
+  -->
+  <style>
+    .bar { fill: #161D20; }
+    @media (prefers-color-scheme: dark) { .bar { fill: #EAF0EF; } }
+  </style>
+  <g>
+    <rect class="bar" x="0"  y="11" width="3" height="11" rx="1"/>
+    <rect class="bar" x="5"  y="3"  width="3" height="19" rx="1"/>
+    <rect x="10" y="8"  width="3" height="14" rx="1" fill="#C6763A"/>
+    <rect class="bar" x="15" y="0"  width="3" height="22" rx="1"/>
+    <rect class="bar" x="20" y="13" width="3" height="9"  rx="1"/>
+  </g>
+</svg>

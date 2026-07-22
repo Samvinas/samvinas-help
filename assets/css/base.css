@@ -1,0 +1,107 @@
+/*
+ * base.css — layout & structure. Org copies of this site should NOT edit this
+ * file: everything brand-specific (colours) lives in theme.css, and everything
+ * text lives in tools.json + content/. If you find yourself editing base.css
+ * to re-brand, stop — you probably want a token in theme.css instead.
+ *
+ * Accessibility notes are inline. This file implements the structural half of
+ * WCAG 2.2 AA (focus visibility, skip link, reduced motion, reflow); the
+ * colour half is enforced on theme.css by check-theme.js.
+ */
+
+* { box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after { transition: none !important; animation: none !important; }
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font: 17px/1.65 -apple-system, "Helvetica Neue", "Segoe UI", system-ui, Roboto, Arial, sans-serif;
+  -webkit-text-size-adjust: 100%;
+  text-rendering: optimizeLegibility;
+}
+
+/* Anchor targets clear the header when jumped to (WCAG 2.4.11). */
+:target { scroll-margin-top: 16px; }
+
+/* ---- skip link: first focusable element, visible only on focus ---------- */
+.skip-link {
+  position: absolute; left: -9999px; top: 0; z-index: 100;
+  background: var(--text); color: var(--bg);
+  padding: 10px 18px; font-weight: 600; text-decoration: none;
+}
+.skip-link:focus { left: 0; }
+
+/* ---- keyboard focus: ≥3:1 ring on every background (checked) ------------ */
+a:focus-visible, button:focus-visible, summary:focus-visible {
+  outline: 2px solid var(--focus);
+  outline-offset: 3px;
+  border-radius: 2px;
+}
+
+/* ---- header -------------------------------------------------------------- */
+header.site { border-bottom: 1px solid var(--line); padding: 14px 20px; }
+header.site .inner {
+  max-width: 720px; margin: 0 auto;
+  display: flex; align-items: center; gap: 12px; flex-wrap: wrap;
+}
+header.site a.home {
+  display: inline-flex; align-items: center; gap: 10px;
+  color: var(--text); font-weight: 700; font-size: 19px;
+  letter-spacing: -0.02em; text-decoration: none;
+}
+header.site a.home:hover { text-decoration: underline; }
+header.site .logo { height: 22px; width: auto; display: block; }
+header.site .aud { color: var(--text-dim); font-size: .85rem; margin-left: auto; }
+
+/* ---- content ------------------------------------------------------------- */
+.page { max-width: 720px; margin: 0 auto; padding: 24px 20px 64px; }
+main :first-child { margin-top: 0; }
+
+h1 { font-size: 1.7rem;  line-height: 1.25; margin: .2em 0 .5em; letter-spacing: -0.022em; }
+h2 { font-size: 1.25rem; margin: 1.6em 0 .4em; letter-spacing: -0.015em; }
+h3 { font-size: 1.05rem; margin: 1.4em 0 .3em; }
+
+p, ul, ol { margin: .6em 0; }
+ul, ol { padding-left: 1.4em; }
+li { margin: .25em 0; }
+
+/* Content links are underlined — colour alone is not a reliable cue. */
+main a { color: var(--link); text-decoration: underline; text-underline-offset: 2px; }
+main a:hover { text-decoration-thickness: 2px; }
+
+code {
+  background: var(--surface);
+  padding: .1em .35em; border-radius: 4px;
+  font-size: .9em;
+  font-family: "SF Mono", "Fira Code", ui-monospace, Menlo, Consolas, monospace;
+}
+pre { background: var(--surface); padding: 14px 16px; border-radius: 6px; overflow-x: auto; }
+pre code { background: none; padding: 0; }
+
+blockquote {
+  margin: 1em 0; padding: .4em 1em;
+  border-left: 3px solid var(--accent);
+  color: var(--text-dim);
+}
+
+hr { border: none; border-top: 1px solid var(--line); margin: 2em 0; }
+
+img { max-width: 100%; height: auto; }
+
+table { border-collapse: collapse; margin: 1em 0; display: block; overflow-x: auto; }
+th, td { border: 1px solid var(--line); padding: .45em .8em; text-align: left; }
+th { background: var(--surface); }
+
+/* ---- footer --------------------------------------------------------------- */
+footer.site {
+  max-width: 720px; margin: 0 auto;
+  padding: 24px 20px; color: var(--text-dim); font-size: .85rem;
+  border-top: 1px solid var(--line);
+}
+footer.site a { color: var(--link); }
