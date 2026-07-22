@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <!-- Samvinas favicon (browser-tab icon), matching samvinas.com.
+       Replace with your own to re-brand; keep it a 32×32 viewBox. -->
+  <rect width="32" height="32" fill="#0F1518"/>
+  <g>
+    <rect x="6"  y="16" width="3" height="10" fill="#EAF0EF"/>
+    <rect x="11" y="9"  width="3" height="17" fill="#EAF0EF"/>
+    <rect x="16" y="13" width="3" height="13" fill="#C6763A"/>
+    <rect x="21" y="6"  width="3" height="20" fill="#EAF0EF"/>
+    <rect x="26" y="18" width="3" height="8"  fill="#EAF0EF"/>
+  </g>
+</svg>

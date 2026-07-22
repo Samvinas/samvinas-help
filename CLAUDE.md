@@ -27,20 +27,36 @@ product.
 
 ## How it works
 
-- `tools.json` — tool list (slug/name/blurb) + site config.
+- `tools.json` — tool list (slug/name/blurb) + site config (title, footer, lang).
 - `template.html` — shared shell with `{{title}}`, `{{content}}`, `{{homeHref}}`,
-  etc. All presentation lives here so content edits can't break layout.
-- `build.js` — renders every `content/**/*.md`, then generates a starter page for
-  any tool missing a `content/<audience>/<slug>.md`. Writes `dist/` + `.nojekyll`.
-- Hosting: GitHub Pages (Actions workflow) or Cloudflare Pages (`npm run build`,
-  output `dist`).
+  `{{assetsHref}}`, etc. Landmarks/skip link live here; **no CSS** — styles are in
+  `assets/css/`.
+- `assets/css/theme.css` — every colour as documented tokens (light + dark
+  blocks); the org-customisation surface. `assets/css/base.css` — layout, not
+  meant to be themed.
+- `check-theme.js` — computes WCAG 2.2 AA contrast on the token pairs; runs
+  first in `npm run build` and FAILS the build below AA. Never silence it by
+  editing its PAIRS/minima — fix the colours (see THEMING-AI.md invariants).
+- `assets/brand/` — logo.svg (22px header mark; internal dark-mode media query)
+  + favicon.svg. `assets/images/diagrams/` — org-replaceable concept art;
+  `assets/images/screenshots/` — app screenshots.
+- `build.js` — renders every `content/**/*.md`, generates a starter page for any
+  tool missing one, copies `assets/` → `dist/assets/`, and rewrites site-root
+  paths (`href/src="/…"`) to depth-relative so sub-path hosting works. Writes
+  `dist/` + `.nojekyll`.
+- Hosting: GitHub Pages (Actions workflow) or Cloudflare Worker static assets
+  (`npm run build`, output `dist`) — prod is help.samvinas.com on the Worker.
 
 ## Common tasks
 
 - **Add real content for a tool:** create/edit `content/participant/<slug>.md`
   and `content/facilitator/<slug>.md`. Rebuild.
 - **Add a new tool:** add it to `tools.json`; a starter page appears on next build.
-- **Change the look:** edit `template.html` (inline CSS).
+- **Re-brand / change colours:** follow `THEMING-AI.md` (protocol + invariants);
+  human edition `THEMING.md`. Short version: edit theme.css tokens only, then
+  `npm run check-theme` must exit 0.
+- **Add an image to a page:** put it under `assets/images/{diagrams,screenshots}/`,
+  reference as `![meaningful alt](/assets/images/…)`.
 
 ## Notes
 

@@ -12,7 +12,11 @@ Add as many as you can — quantity first, judgement later.
 ## Ground rules for great ideas
 
 This is the **divergent** part of the process, where we widen the field of
-possibilities. Four habits make it work:
+possibilities.
+
+![Creative work alternates between two phases: diverging to generate many options, then converging to make choices.](/assets/images/diagrams/diverge-converge.svg)
+
+Four habits make it work:
 
 1. **Defer judgement.** No idea is criticised yet — that comes later. Nothing
    shuts down a group faster than "that won't work."

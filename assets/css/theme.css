@@ -1,0 +1,54 @@
+/*
+ * theme.css — THE file to edit when you re-brand this help site.
+ *
+ * Every colour the site uses is defined here as a named token. Change the hex
+ * values, run `npm run check-theme`, and you are done — layout and structure
+ * live in base.css and never need touching.
+ *
+ * The default palette is Samvinas "Basalt & Glacier", copied from samvinas.com.
+ * Every foreground/background pair below has a computed WCAG 2.2 AA contrast
+ * ratio (the numbers in the comments). If you change a value, `npm run
+ * check-theme` recomputes them and fails the build if a pair drops below the
+ * legal minimum — that is a feature, not an obstacle: it means a themed copy
+ * of this site can never silently become unreadable.
+ *
+ * Human guide:  THEMING.md          AI/agent protocol:  THEMING-AI.md
+ *
+ * STRUCTURE RULE (do not break): light tokens live in the first `:root` block,
+ * dark tokens in the `:root` block inside the `prefers-color-scheme: dark`
+ * media query. check-theme.js parses exactly this structure.
+ */
+
+:root {
+  /* ---- Surfaces ------------------------------------------------------- */
+  --bg:      #EBEEEC;  /* page background ("paper")                        */
+  --surface: #E2E7E4;  /* raised panels: code blocks, callouts, footer     */
+
+  /* ---- Text ----------------------------------------------------------- */
+  --text:     #161D20; /* body text        — 14.6:1 on --bg  (min 4.5)    */
+  --text-dim: #47555A; /* secondary text   —  6.6:1 on --bg  (min 4.5)    */
+
+  /* ---- Brand ---------------------------------------------------------- */
+  --link:   #1C5C64;   /* links            —  6.5:1 on --bg  (min 4.5)    */
+  --accent: #C6763A;   /* decorative accent (blockquote bar, logo bar).
+                          DECORATION ONLY — never use for text under 24px  */
+  --focus:  #B4682E;   /* keyboard focus ring — 3.6:1 on --bg (min 3.0)   */
+
+  /* ---- Lines ---------------------------------------------------------- */
+  --line: #C4CDC9;     /* hairline rules — decorative, no contrast floor   */
+}
+
+/* Dark scheme — applied automatically when the reader's OS prefers dark.
+   Delete this whole block if your brand is light-only. */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg:       #14191D; /* deep basalt                                    */
+    --surface:  #1D242A;
+    --text:     #DDE4E3; /* 13.7:1 on --bg                                 */
+    --text-dim: #9BAAAC; /*  7.4:1 on --bg                                 */
+    --link:     #4FB3BE; /*  7.2:1 on --bg                                 */
+    --accent:   #DA9257; /* decoration only                                */
+    --focus:    #C87B3D; /*  5.4:1 on --bg (min 3.0)                       */
+    --line:     #2A363B;
+  }
+}

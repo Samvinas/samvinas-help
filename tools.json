@@ -1,7 +1,6 @@
 {
   "site": {
     "title": "Samvinas Help",
-    "brandColor": "#3E76B8",
     "footer": "Help content for Samvinas events. Edit the Markdown in <code>content/</code> to make it your own."
   },
   "tools": [
