@@ -40,6 +40,9 @@
     { "slug": "pmi",                "name": "PMI",                  "mode": "organising", "blurb": "A quick balanced scan: Plus, Minus & Interesting." },
     { "slug": "evaluation-matrix",  "name": "Evaluation Matrix",    "mode": "focusing",   "blurb": "Score options against several criteria and compare them." },
     { "slug": "backcasting",        "name": "Backcasting",          "mode": "organising", "blurb": "Place the steps toward a desired future onto a timeline." },
-    { "slug": "instructions",       "name": "Instructions",         "blurb": "A page of instructions or information for participants." }
+    { "slug": "instructions",       "name": "Instructions",         "blurb": "A page of instructions or information for participants." },
+    { "slug": "timer",              "name": "Timer",                "utility": true, "blurb": "A shared countdown, visible to everyone." },
+    { "slug": "raise-hand",         "name": "Raise Hand",           "utility": true, "blurb": "A fair queue for speaking up." },
+    { "slug": "event-info",         "name": "Event Info",           "utility": true, "blurb": "A standing page for WiFi, schedule and venue details." }
   ]
 }

@@ -9,6 +9,9 @@ taking part in one, your guides live under
 
 - **[Setting up an event](/facilitator/getting-started.html)** — from creating
   your first event to sharing the QR code and focusing your first tool.
+- **[Principles refresher](/principles/)** — the ideas the whole process runs
+  on: diverge/converge, the four stages, deferring judgement, framing
+  problems as questions.
 
 ## The toolbox, by what each tool does
 
@@ -35,3 +38,15 @@ Three tools shape the event itself rather than the ideas in it:
   participant their own mini-flow.
 - **[Instructions](/facilitator/instructions.html)** — a page of guidance or
   information for participants, right in the flow.
+
+## Utilities
+
+Utilities sit alongside the flow — enable them once and they're available
+across every tool in the event:
+
+- **[Timer](/facilitator/timer.html)** — a shared countdown in everyone's
+  footer, with a fullscreen presenter mode on any device.
+- **[Raise Hand](/facilitator/raise-hand.html)** — a fair, visible queue for
+  speaking up.
+- **[Event Info](/facilitator/event-info.html)** — a standing page for WiFi,
+  schedule and venue details.

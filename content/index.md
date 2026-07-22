@@ -19,6 +19,12 @@ tailored them, translated them, or added their own guidance.
 - Tool guides live at `participant/<tool>.html` — you'll usually reach the right
   one by tapping the **?** in the top corner while using a tool.
 
+## The ideas behind it
+
+- **[Principles refresher](/principles/)** — the two-minute version of
+  Creative Problem Solving: diverge and converge, the four stages, deferring
+  judgement, and framing problems as questions.
+
 ---
 
 *Powered by [Samvinas](https://samvinas.com).*
