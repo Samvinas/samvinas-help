@@ -5,7 +5,17 @@ and inside each one the [diverge](/principles/divergence.html)–[converge](/pri
 heartbeat runs at least once. Groups rarely march through them in a straight
 line; knowing which stage you're *in* is the practical skill.
 
-*(A diagram of the four stages will live here.)*
+![The four stages — Clarify, Ideate, Develop, Implement — arranged in a clockwise cycle, each containing a small diverge-then-converge pair. At the centre, connected to all four, sits Assess the situation.](/assets/images/diagrams/four-stages.svg)
+
+## The centre: assess the situation
+
+The hub of the model isn't a stage — it's a habit. **Assessing the
+situation** means pausing to take stock: what do we know, what do we have,
+and which stage does the work need next? It's the move you return to between
+stages, and it's why the process is drawn as a cycle around a centre rather
+than a straight line — a group might assess and realise it needs to go *back*
+to Clarify, or that it can skip straight to Develop because good ideas
+already exist.
 
 ## 1. Clarify — find the right problem
 

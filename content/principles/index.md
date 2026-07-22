@@ -20,16 +20,18 @@ same time* is what kills most meetings.
 - **[Convergence](/principles/convergence.html)** — choosing well, without
   crushing what was just created.
 
-## The process: four stages
+## The process: four stages, and a centre
 
 The diverge–converge heartbeat repeats through four stages of work —
-**Clarify → Ideate → Develop → Implement**. Samvinas's tool picker is
-organised around the same stages.
+**Clarify → Ideate → Develop → Implement** — with one habit at the centre:
+**assessing the situation**, the pause between stages where a group takes
+stock and chooses where to go next. Samvinas's tool picker is organised
+around the same stages.
+
+![The four stages — Clarify, Ideate, Develop, Implement — arranged in a clockwise cycle, each containing a small diverge-then-converge pair. At the centre, connected to all four, sits Assess the situation.](/assets/images/diagrams/four-stages.svg)
 
 - **[The four stages](/principles/four-stages.html)** — what each stage is
-  for, and what "done" looks like in each.
-
-*(A diagram of the full process will live here.)*
+  for, what "done" looks like in each, and the assessing habit at the centre.
 
 ## Two habits that make it work
 
