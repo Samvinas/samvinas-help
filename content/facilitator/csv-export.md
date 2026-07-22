@@ -53,6 +53,7 @@ one-row-per-record so you can sort and filter:
 | [Five Whys](/facilitator/five-whys.html) | Level · Statement · In Response To · Root Cause *(the tree, flattened depth-first)* |
 | [Elaboration](/facilitator/elaboration.html) | Item · Elaboration · Author |
 | [PPCO](/facilitator/ppco.html) / [ALoU](/facilitator/alou.html) / [LCO](/facilitator/lco.html) / [PMI](/facilitator/pmi.html) | Idea · Attribute · Entry · Answers Concern · Author *(attribute names follow your custom labels)* |
+| [Evaluation Matrix](/facilitator/evaluation-matrix.html) | # · Option · one average column per criterion · Total · Responses *(sorted best-first; columns take your criterion labels; unscored cells are blank, not zero)* |
 | [Backcasting](/facilitator/backcasting.html) | Block · Step · Author · Comments *(latest block first; unplaced steps last)* |
 | [Rich Brainstorm](/facilitator/rich-brainstorm.html) | # · Idea · Author · Sketches *(a count — the drawings themselves are in the HTML report)* |
 | [Brainstorm](/facilitator/brainstorm.html) and any other tool | # · Idea · Author · Created |
