@@ -21,9 +21,12 @@ confident in its choices *and* glad it generated wildly.
 
 ## What it looks like in Samvinas
 
-The **[focusing tools](/facilitator/tools-focusing.html)** — Voting, Ranking,
-Value/Doability, Evaluation Matrix — make converging visible and shared,
-instead of something that happens in the loudest corner of the room.
+The **[focusing tools](/facilitator/tools-focusing.html)** —
+[Voting](/facilitator/voting.html), [Ranking](/facilitator/ranking.html),
+[Value / Doability](/facilitator/value-doability.html),
+[Evaluation Matrix](/facilitator/evaluation-matrix.html) — make converging
+visible and shared, instead of something that happens in the loudest corner
+of the room.
 
 Convergence works on what divergence provides:
 **[divergence](/principles/divergence.html)** comes first.

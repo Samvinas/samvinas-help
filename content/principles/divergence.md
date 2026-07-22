@@ -20,9 +20,10 @@ instead.
 
 ## What it looks like in Samvinas
 
-The **[generating tools](/facilitator/tools-generating.html)** — Brainstorm
-and its relatives — are built for this move: everyone contributes at once,
-everything is visible, nothing is scored yet.
+The **[generating tools](/facilitator/tools-generating.html)** —
+[Brainstorm](/facilitator/brainstorm.html) and its relatives — are built for
+this move: everyone contributes at once, everything is visible, nothing is
+scored yet.
 
 Divergence only earns its keep if it's followed by its partner:
 **[convergence](/principles/convergence.html)**.
