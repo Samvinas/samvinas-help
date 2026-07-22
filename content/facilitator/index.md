@@ -53,6 +53,8 @@ across every tool in the event:
 
 ## Getting your data out
 
+- **[The event report](/facilitator/event-report.html)** — the whole event as
+  a single shareable HTML file, formatted for reading.
 - **[CSV export](/facilitator/csv-export.html)** — every tool's results as a
   spreadsheet-ready file: the format, the columns per tool, and how to open
   it in Sheets, Excel or anything else.

@@ -6,8 +6,8 @@ Open a tool's ⚙ menu, choose the **Data** tab, and **Export CSV**. The file
 downloads immediately, named `<EVENTCODE>-<Tool-name>.csv`.
 
 (For a shareable, formatted write-up of the *whole event* — including charts
-and sketches — use the event's HTML report instead; CSV is for working with
-the data.)
+and sketches — use **[the event report](/facilitator/event-report.html)**
+instead; CSV is for working with the data.)
 
 ## The file format
 
