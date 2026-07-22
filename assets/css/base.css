@@ -58,6 +58,8 @@ header.site a.home {
 header.site a.home:hover { text-decoration: underline; }
 header.site .logo { height: 22px; width: auto; display: block; }
 header.site .aud { color: var(--text-dim); font-size: .85rem; margin-left: auto; }
+header.site a.aud { text-decoration: none; }
+header.site a.aud:hover { text-decoration: underline; }
 
 /* ---- content ------------------------------------------------------------- */
 .page { max-width: 720px; margin: 0 auto; padding: 24px 20px 64px; }

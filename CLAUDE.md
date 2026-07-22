@@ -27,7 +27,16 @@ product.
 
 ## How it works
 
-- `tools.json` — tool list (slug/name/blurb) + site config (title, footer, lang).
+- `tools.json` — tool list (slug/name/blurb/`mode`) + site config (title, footer,
+  lang) + `modes` (title/intro per group). `mode` ∈ generating|focusing|organising
+  mirrors `kelvin_tool_metadata.mode` in the app's DB (editable in admin → Tools);
+  keep them in sync when tools are added or reclassified. Tools without a mode
+  (instructions, workspace-launcher, breakout-groups) are structural — they're
+  linked from the facilitator landing page, not the group indexes.
+- **Generated index pages:** build.js emits `facilitator/tools-<mode>.html` from
+  tools.json (override by authoring `content/facilitator/tools-<mode>.md`). The
+  facilitator landing is authored at `content/facilitator/index.md` → served at
+  `/facilitator/`. The header audience chip on facilitator pages links back to it.
 - `template.html` — shared shell with `{{title}}`, `{{content}}`, `{{homeHref}}`,
   `{{assetsHref}}`, etc. Landmarks/skip link live here; **no CSS** — styles are in
   `assets/css/`.

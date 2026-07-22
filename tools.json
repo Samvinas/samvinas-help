@@ -3,27 +3,43 @@
     "title": "Samvinas Help",
     "footer": "Help content for Samvinas events. Edit the Markdown in <code>content/</code> to make it your own."
   },
+  "modes": {
+    "generating": {
+      "title": "Generating tools",
+      "intro": "Tools for widening the field — producing many ideas, options and possibilities before any judging starts. Reach for these in the divergent half of a session."
+    },
+    "focusing": {
+      "title": "Focusing tools",
+      "intro": "Tools for narrowing down — comparing, weighing and choosing among the options a group has generated. These are convergent: they end with fewer, stronger items than they started with."
+    },
+    "organising": {
+      "title": "Organising tools",
+      "intro": "Tools for arranging and making sense — grouping, mapping, sequencing and developing what the group has, without cutting anything. Nothing is voted off; things find their place."
+    }
+  },
   "tools": [
-    { "slug": "brainstorm",         "name": "Brainstorm",         "blurb": "Collect lots of ideas quickly." },
-    { "slug": "voting",             "name": "Voting",             "blurb": "Surface the group's favourites with stars." },
-    { "slug": "ranking",            "name": "Ranking",            "blurb": "Put items in order of preference." },
-    { "slug": "clustering",         "name": "Clustering",         "blurb": "Group related ideas into themes." },
-    { "slug": "value-doability",    "name": "Value / Doability",  "blurb": "Score ideas on two dimensions and plot them." },
-    { "slug": "stakeholder-map",    "name": "Stakeholder Map",    "blurb": "Map people or groups on two axes." },
-    { "slug": "signup",             "name": "Sign Up",            "blurb": "Let people put their name to items." },
-    { "slug": "wordcloud",          "name": "Word Cloud",         "blurb": "See the words the group used most." },
-    { "slug": "brainwriting",       "name": "Brain Writing",      "blurb": "Spark new ideas from each other's provocations." },
-    { "slug": "rich-brainstorm",    "name": "Rich Brainstorm",    "blurb": "Brainstorm with formatting and freehand sketches." },
-    { "slug": "tagging",            "name": "Tagging",            "blurb": "Sort items into categories." },
-    { "slug": "workspace-launcher", "name": "Personal Workspace", "blurb": "Give everyone their own mini-flow." },
-    { "slug": "five-whys",          "name": "Five Whys",          "blurb": "Dig to a root cause by asking \"why\" repeatedly." },
-    { "slug": "breakout-groups",    "name": "Breakout Groups",    "blurb": "Split into small groups with a shared workspace." },
-    { "slug": "elaboration",        "name": "Elaboration",        "blurb": "Develop chosen ideas in depth." },
-    { "slug": "alou",               "name": "ALoU",               "blurb": "Weigh an option: Advantages, Limitations & Unique Features." },
-    { "slug": "lco",                "name": "LCO",                "blurb": "React to an option: Likes, Concerns & Opportunities." },
-    { "slug": "pmi",                "name": "PMI",                "blurb": "A quick balanced scan: Plus, Minus & Interesting." },
-    { "slug": "evaluation-matrix",  "name": "Evaluation Matrix",  "blurb": "Score options against several criteria and compare them." },
-    { "slug": "backcasting",        "name": "Backcasting",        "blurb": "Place the steps toward a desired future onto a timeline." },
-    { "slug": "instructions",       "name": "Instructions",       "blurb": "A page of instructions or information for participants." }
+    { "slug": "brainstorm",         "name": "Brainstorm",           "mode": "generating", "blurb": "Collect lots of ideas quickly." },
+    { "slug": "voting",             "name": "Voting",               "mode": "focusing",   "blurb": "Surface the group's favourites with stars." },
+    { "slug": "ranking",            "name": "Ranking",              "mode": "focusing",   "blurb": "Put items in order of preference." },
+    { "slug": "clustering",         "name": "Clustering",           "mode": "organising", "blurb": "Group related ideas into themes." },
+    { "slug": "value-doability",    "name": "Value / Doability",    "mode": "focusing",   "blurb": "Score ideas on two dimensions and plot them." },
+    { "slug": "stakeholder-map",    "name": "Stakeholder Map",      "mode": "organising", "blurb": "Map people or groups on two axes." },
+    { "slug": "signup",             "name": "Sign Up",              "mode": "organising", "blurb": "Let people put their name to items." },
+    { "slug": "wordcloud",          "name": "Word Cloud",           "mode": "organising", "blurb": "See the words the group used most." },
+    { "slug": "brainwriting",       "name": "Brain Writing",        "mode": "generating", "blurb": "Spark new ideas from each other's provocations." },
+    { "slug": "tagged-brainstorm",  "name": "Tagged Brainstorming", "mode": "generating", "blurb": "Brainstorm straight into labelled buckets." },
+    { "slug": "rich-brainstorm",    "name": "Rich Brainstorm",      "mode": "generating", "blurb": "Brainstorm with formatting and freehand sketches." },
+    { "slug": "tagging",            "name": "Tagging",              "mode": "organising", "blurb": "Sort items into categories." },
+    { "slug": "workspace-launcher", "name": "Personal Workspace",   "blurb": "Give everyone their own mini-flow." },
+    { "slug": "five-whys",          "name": "Five Whys",            "mode": "generating", "blurb": "Dig to a root cause by asking \"why\" repeatedly." },
+    { "slug": "breakout-groups",    "name": "Breakout Groups",      "blurb": "Split into small groups with a shared workspace." },
+    { "slug": "elaboration",        "name": "Elaboration",          "mode": "generating", "blurb": "Develop chosen ideas in depth." },
+    { "slug": "ppco",               "name": "PPCO",                 "mode": "organising", "blurb": "Develop an idea: Pluses, Potentials, Concerns — and ways to overcome them." },
+    { "slug": "alou",               "name": "ALoU",                 "mode": "organising", "blurb": "Weigh an option: Advantages, Limitations & Unique Features." },
+    { "slug": "lco",                "name": "LCO",                  "mode": "organising", "blurb": "React to an option: Likes, Concerns & Opportunities." },
+    { "slug": "pmi",                "name": "PMI",                  "mode": "organising", "blurb": "A quick balanced scan: Plus, Minus & Interesting." },
+    { "slug": "evaluation-matrix",  "name": "Evaluation Matrix",    "mode": "focusing",   "blurb": "Score options against several criteria and compare them." },
+    { "slug": "backcasting",        "name": "Backcasting",          "mode": "organising", "blurb": "Place the steps toward a desired future onto a timeline." },
+    { "slug": "instructions",       "name": "Instructions",         "blurb": "A page of instructions or information for participants." }
   ]
 }
