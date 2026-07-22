@@ -50,3 +50,9 @@ across every tool in the event:
   speaking up.
 - **[Event Info](/facilitator/event-info.html)** — a standing page for WiFi,
   schedule and venue details.
+
+## Getting your data out
+
+- **[CSV export](/facilitator/csv-export.html)** — every tool's results as a
+  spreadsheet-ready file: the format, the columns per tool, and how to open
+  it in Sheets, Excel or anything else.
