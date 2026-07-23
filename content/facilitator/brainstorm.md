@@ -5,7 +5,10 @@ to at once. It's usually the opening, **divergent** step of a flow.
 
 ## How to run it
 
-- Set a clear, open **Prompt** — "How might we…?" questions work well.
+- Set a clear, open **Prompt** — the stem depends on where you are in the
+  process: *"I wish…"* / *"It would be great if…"* for surfacing goals early
+  on; *"How might we…?"* / *"In what ways might we…?"* for generating ideas
+  against a chosen problem; *"What might be all the…?"* to widen a hunt.
 - Keep it visible and unlocked while ideas flow. Encourage quantity out loud.
 - Watch the list; if it stalls, offer a fresh angle or a provocation.
 - When you're ready to converge, **Lock** it and pipe the ideas into the next
@@ -18,6 +21,9 @@ to at once. It's usually the opening, **divergent** step of a flow.
   help page.)
 - Silence is fine; give people time to think. A minute of quiet often produces
   the best ideas.
+- Aim past the first wave. A strong session can reach forty ideas — and the
+  *second* forty is where the novelty lives. When good ideas start appearing,
+  don't stop: that's the signal to stretch, not to settle.
 - If a few voices dominate, Brain Writing or Breakout Groups can spread
   participation.
 

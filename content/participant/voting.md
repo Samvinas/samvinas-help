@@ -21,6 +21,9 @@ vote honest and the group's thinking diverse.
 
 - Vote for what genuinely excites you or best meets the group's criteria — not
   just your own idea.
+- A good "yes" can be gut-level: it's interesting, it's useful, it gets at
+  the problem — or it simply keeps pulling your eye back. That pull is
+  information; analysis gets its turn later.
 - Spread your votes or concentrate them; it's your call.
 - There are no wrong votes. This is a quick read of the room, not the final
   decision.

@@ -15,13 +15,24 @@ and which stage does the work need next? It's the move you return to between
 stages, and it's why the process is drawn as a cycle around a centre rather
 than a straight line — a group might assess and realise it needs to go *back*
 to Clarify, or that it can skip straight to Develop because good ideas
-already exist.
+already exist. **[The process at a glance](/principles/process-at-a-glance.html)**
+gives a starting condition for every step — use it to decide where to enter.
 
 ## 1. Clarify — find the right problem
 
-Explore the situation, gather what's known, and converge on the challenge
-worth working: a well-formed
-["How might we…?"](/principles/problems-as-questions.html) question.
+Clarify is the biggest stage — big enough that it breaks into three steps of
+its own, each with the heartbeat inside it:
+
+1. **Frame the goal.** Diverge on wishes — *"I wish…"*, *"It would be great
+   if…"* — and converge on a challenge the group cares about, can act on,
+   and that genuinely needs new thinking.
+2. **Gather data.** Explore the territory: what's known, what's been tried,
+   who's involved, what ideal would look like. Keep the findings that change
+   how you see the challenge.
+3. **Find the problem.** Turn what you learned into candidate questions and
+   converge on the one worth solving: a well-formed
+   ["How might we…?"](/principles/problems-as-questions.html) question.
+
 **Done looks like:** a question the group agrees is the real one.
 *Samvinas tools:* [Five Whys](/facilitator/five-whys.html),
 [Word Cloud](/facilitator/wordcloud.html), a
