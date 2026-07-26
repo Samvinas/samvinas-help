@@ -37,6 +37,20 @@ product.
   tools.json (override by authoring `content/facilitator/tools-<mode>.md`). The
   facilitator landing is authored at `content/facilitator/index.md` → served at
   `/facilitator/`. The header audience chip on facilitator pages links back to it.
+- `nav` (in tools.json) — what the **section rail** lists, in order, for each of
+  `facilitator`, `participant`, `principles`. Entries are page slugs (authored
+  pages or tools); `"$<mode>"` means that mode's generated tool index. Tool-group
+  rails are NOT configured here — a tool page shows its own mode's tools in
+  tools.json order, so a rail can never drift from its index page. Labels come
+  from the tool `name`, or the page's h1 shortened at " — ". To put a new
+  authored page in a section, add its slug to that section's `items`.
+- **The section rail** (`build.js` → `sectionNav`, styled in base.css): shows the
+  pages beside the current one, with the current page's own h2s nested underneath
+  when it has ≥3 of them (short pages get no sub-list — a two-item "on this page"
+  is chrome, not structure). Shown from 1100px up only; below that it is
+  `display:none`, which removes no content because every link in it is also in
+  the breadcrumb trail or an index page. Heading `id`s are generated in build.js
+  (marked 12 no longer slugs headings), so `#section` deep links work everywhere.
 - `template.html` — shared shell with `{{title}}`, `{{content}}`, `{{homeHref}}`,
   `{{assetsHref}}`, etc. Landmarks/skip link live here; **no CSS** — styles are in
   `assets/css/`.

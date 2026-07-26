@@ -29,11 +29,44 @@ const template = fs.readFileSync(path.join(ROOT, 'template.html'), 'utf8');
 
 marked.setOptions({ mangle: false, headerIds: false });
 
+/**
+ * Heading ids. marked 12 no longer slugs headings, but the section rail links
+ * to a page's own h2s, and readers deep-link to sections, so we add them here.
+ * `pageHeadings` collects the h2s of the page currently being rendered — the
+ * rail reads it after marked.parse() returns.
+ */
+let pageHeadings = [];
+const slugify = (s) => s
+  .replace(/<[^>]*>/g, '')        // heading text arrives as rendered inline HTML
+  .replace(/&[a-z]+;|&#\d+;/gi, ' ')
+  .toLowerCase()
+  .replace(/[^\w\s-]/g, '')
+  .trim()
+  .replace(/\s+/g, '-');
+
+const renderer = new marked.Renderer();
+renderer.heading = function (text, level) {
+  if (level < 2 || level > 3) return `<h${level}>${text}</h${level}>`;
+  let id = slugify(text) || `section-${pageHeadings.length + 1}`;
+  const taken = new Set(pageHeadings.map(h => h.id));
+  if (taken.has(id)) {
+    let n = 2;
+    while (taken.has(`${id}-${n}`)) n++;
+    id = `${id}-${n}`;
+  }
+  if (level === 2) pageHeadings.push({ id, text: text.replace(/<[^>]*>/g, '').trim() });
+  return `<h${level} id="${id}">${text}</h${level}>`;
+};
+marked.setOptions({ renderer });
+
 // Derive a page <title> from the first markdown heading, else the file name.
 function titleOf(md, fallback) {
   const m = md.match(/^\s*#\s+(.+)\s*$/m);
   return m ? m[1].trim() : fallback;
 }
+
+// House style: "CSV export — for facilitators" reads as "CSV export" in nav.
+const shortTitle = (t) => String(t).split(' — ')[0].trim();
 
 // The audience chip in the header. On facilitator pages it links back to the
 // facilitator landing page (dist/facilitator/index.html — served at /facilitator/).
@@ -99,19 +132,113 @@ function breadcrumb(rel, prefix, pageTitle) {
   return `<nav class="crumbs" aria-label="Breadcrumb"><div class="inner"><ol>${items}</ol></div></nav>`;
 }
 
-function render(rel, md) {
+/**
+ * Section rail — the pages that sit beside this one.
+ *
+ * The site is 60+ pages reached only by breadcrumbs and index pages; the rail
+ * gives every page a persistent sense of where it sits. Which section a page
+ * belongs to follows the same hierarchy as the breadcrumb:
+ *   tool page (has a mode) → its mode group, in the page's own audience
+ *   principles page        → Principles
+ *   anything else          → the audience's guide (nav.facilitator / .participant)
+ * Order comes from `nav` in tools.json (tool groups keep tools.json order), so
+ * the rail can never drift from the generated index pages.
+ *
+ * On the current page's entry, its own h2s are nested underneath — but only
+ * when there are ≥3. Most pages here are short; a two-item "on this page" list
+ * is chrome, not structure.
+ * Below 1100px the rail is hidden (base.css): nothing is only reachable
+ * through it — breadcrumbs and the index pages carry the same links.
+ */
+const SUBHEADING_MIN = 3;
+
+function navSection(rel) {
+  if (rel === 'index.md') return null;
+  const audience = rel.split('/')[0];
+  const page = rel.replace(/^(facilitator|participant|principles)\//, '').replace(/\.md$/, '');
+  const tool = (cfg.tools || []).find(t => t.slug === page);
+
+  if (audience === 'principles') return { key: 'principles', audience, current: page };
+  if (tool?.mode && cfg.modes?.[tool.mode]) return { key: `$${tool.mode}`, audience, current: page };
+  if (audience === 'facilitator' || audience === 'participant') {
+    const mode = page.match(/^tools-(\w+)$/)?.[1];
+    return { key: audience, audience, current: mode ? `$${mode}` : page };
+  }
+  return null;
+}
+
+function sectionNav(rel, prefix, pageTitles) {
+  const sec = navSection(rel);
+  if (!sec) return '';
+  const toolBySlug = new Map((cfg.tools || []).map(t => [t.slug, t]));
+  let title, href, entries;
+
+  if (sec.key.startsWith('$')) {
+    // a tool-mode group, listed in the audience the reader is already in
+    const mode = sec.key.slice(1);
+    title = cfg.modes[mode].title;
+    href = sec.audience === 'facilitator' ? `${prefix}facilitator/tools-${mode}.html` : null;
+    entries = (cfg.tools || []).filter(t => t.mode === mode)
+      .map(t => ({ id: t.slug, label: t.name, href: `${prefix}${sec.audience}/${t.slug}.html` }));
+  } else {
+    const conf = cfg.nav?.[sec.key];
+    if (!conf) return '';
+    title = conf.title;
+    href = conf.href ? prefix + conf.href.replace(/^\//, '') : null;
+    entries = (conf.items || []).map((item) => {
+      if (item.startsWith('$')) {                       // a generated mode index
+        const mode = item.slice(1);
+        return cfg.modes?.[mode]
+          ? { id: item, label: cfg.modes[mode].title, href: `${prefix}facilitator/tools-${mode}.html` }
+          : null;
+      }
+      const dir = sec.key === 'principles' ? 'principles' : sec.audience;
+      const t = toolBySlug.get(item);
+      const label = t ? t.name : shortTitle(pageTitles.get(`${dir}/${item}.md`) || item);
+      return { id: item, label, href: `${prefix}${dir}/${item}.html` };
+    }).filter(Boolean);
+  }
+  if (!entries.length) return '';
+
+  const subs = pageHeadings.length >= SUBHEADING_MIN
+    ? `<ul class="sub">${pageHeadings.map(h =>
+        `<li><a href="#${escAttr(h.id)}">${escAttr(h.text)}</a></li>`).join('')}</ul>`
+    : '';
+
+  const items = entries.map(e => {
+    const here = e.id === sec.current;
+    return `<li${here ? ' class="here"' : ''}>` +
+      `<a href="${escAttr(e.href)}"${here ? ' aria-current="page"' : ''}>${escAttr(e.label)}</a>` +
+      `${here ? subs : ''}</li>`;
+  }).join('');
+
+  // On a section's own landing page (/facilitator/, /principles/) the title IS
+  // the current page — mark it, or nothing in the rail would be marked at all.
+  const titleIsHere = sec.current === 'index' && !sec.key.startsWith('$');
+  const heading = href
+    ? `<a class="section-nav__title" href="${escAttr(href)}"${titleIsHere ? ' aria-current="page"' : ''} id="section-nav-title">${escAttr(title)}</a>`
+    : `<p class="section-nav__title" id="section-nav-title">${escAttr(title)}</p>`;
+  return `<nav class="section-nav" aria-labelledby="section-nav-title">${heading}<ul>${items}</ul></nav>`;
+}
+
+function render(rel, md, pageTitles = new Map()) {
   const prefix = homeHref(rel);
   const pageTitle = titleOf(md, rel);
   // Authors write site-root paths (src="/assets/…", href="/participant/x.html");
   // rewrite them relative to this page's depth so the site works from any host
   // path (GitHub Pages project sites live under /<repo>/, not /).
+  pageHeadings = [];   // the renderer fills this during parse; the rail reads it after
   const html = marked.parse(md).replace(/(href|src)="\/(?!\/)/g, `$1="${prefix}`);
+  // the rail needs pageHeadings, so it must be built after the parse above
+  const nav = sectionNav(rel, prefix, pageTitles);
   const out = template
     .replaceAll('{{lang}}', site.lang || 'en')
     .replaceAll('{{siteTitle}}', site.title || 'Help')
     .replaceAll('{{title}}', `${pageTitle} — ${site.title || 'Help'}`)
     .replaceAll('{{audienceSlot}}', audienceSlot(rel, prefix))
     .replaceAll('{{breadcrumb}}', breadcrumb(rel, prefix, pageTitle))
+    .replaceAll('{{sectionnav}}', nav)
+    .replaceAll('{{bodyClass}}', nav ? 'has-rail' : '')
     .replaceAll('{{homeHref}}', prefix)
     .replaceAll('{{assetsHref}}', prefix)
     .replaceAll('{{footer}}', site.footer || '')
@@ -164,9 +291,14 @@ fs.cpSync(path.join(ROOT, 'assets'), path.join(OUT, 'assets'), { recursive: true
 
 const written = new Set();
 
+// 0) Titles first: the section rail labels authored pages from their own h1,
+//    so every title must be known before the first page is rendered.
+const sources = new Map(walk(SRC).map(rel => [rel, fs.readFileSync(path.join(SRC, rel), 'utf8')]));
+const pageTitles = new Map([...sources].map(([rel, md]) => [rel, titleOf(md, rel)]));
+
 // 1) Every authored Markdown page.
-for (const rel of walk(SRC)) {
-  render(rel, fs.readFileSync(path.join(SRC, rel), 'utf8'));
+for (const [rel, md] of sources) {
+  render(rel, md, pageTitles);
   written.add(rel);
 }
 
@@ -175,7 +307,7 @@ let generated = 0;
 for (const tool of cfg.tools || []) {
   for (const audience of ['participant', 'facilitator']) {
     const rel = `${audience}/${tool.slug}.md`;
-    if (!written.has(rel)) { render(rel, starter(tool, audience)); generated++; }
+    if (!written.has(rel)) { render(rel, starter(tool, audience), pageTitles); generated++; }
   }
 }
 
@@ -190,7 +322,7 @@ for (const [mode, meta] of Object.entries(cfg.modes || {})) {
   const md = `# ${meta.title}\n\n${meta.intro}\n\n` +
     tools.map(t => `- **[${t.name}](/facilitator/${t.slug}.html)** — ${t.blurb}`).join('\n') +
     `\n\n---\n\n[← Back to the facilitator guide](/facilitator/)\n`;
-  render(rel, md);
+  render(rel, md, pageTitles);
   generated++;
 }
 

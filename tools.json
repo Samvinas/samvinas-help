@@ -17,6 +17,28 @@
       "intro": "Tools for arranging and making sense — grouping, mapping, sequencing and developing what the group has, without cutting anything. Nothing is voted off; things find their place."
     }
   },
+  "nav": {
+    "facilitator": {
+      "title": "Facilitator guide",
+      "href": "/facilitator/",
+      "items": ["getting-started", "$generating", "$focusing", "$organising",
+                "breakout-groups", "workspace-launcher", "instructions",
+                "timer", "raise-hand", "event-info",
+                "event-report", "csv-export"]
+    },
+    "participant": {
+      "title": "Taking part",
+      "href": "/index.html",
+      "items": ["instructions", "breakout-groups", "workspace-launcher",
+                "timer", "raise-hand", "event-info"]
+    },
+    "principles": {
+      "title": "Principles",
+      "href": "/principles/",
+      "items": ["divergence", "convergence", "four-stages", "process-at-a-glance",
+                "deferring-judgement", "problems-as-questions"]
+    }
+  },
   "tools": [
     { "slug": "brainstorm",         "name": "Brainstorm",           "mode": "generating", "blurb": "Collect lots of ideas quickly." },
     { "slug": "voting",             "name": "Voting",               "mode": "focusing",   "blurb": "Surface the group's favourites with stars." },
