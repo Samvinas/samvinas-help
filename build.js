@@ -91,6 +91,23 @@ renderer.image = function (href, title, text) {
     + `${img}</picture>`;
 };
 
+/* Wide tables scroll sideways rather than pushing the page past the viewport
+ * (WCAG 1.4.10 reflow). Two things that needs, both of which were wrong:
+ *
+ * 1. The scroll container must be keyboard-reachable, or someone without a
+ *    mouse cannot reach the columns off-screen — axe flags this as
+ *    `scrollable-region-focusable`, and it was already failing at 390px on
+ *    /principles/process-at-a-glance before this wrapper existed.
+ * 2. The scrolling belongs on a wrapper, not on the <table> itself. Setting
+ *    `display:block` on a table to make it scroll also drops its table
+ *    semantics for some assistive tech — the rows stop being rows.
+ */
+renderer.table = function (header, body) {
+  return '<div class="table-scroll" tabindex="0">'
+    + `<table><thead>${header}</thead><tbody>${body}</tbody></table>`
+    + '</div>';
+};
+
 marked.setOptions({ renderer });
 
 // Derive a page <title> from the first markdown heading, else the file name.

@@ -281,7 +281,11 @@ main img[src*="/screenshots/"] {
   display: block;
 }
 
-table { border-collapse: collapse; margin: 1em 0; display: block; overflow-x: auto; }
+/* The wrapper scrolls (build.js emits it, focusable for keyboard users), so the
+   table keeps real table semantics instead of display:block. */
+.table-scroll { overflow-x: auto; margin: 1em 0; }
+.table-scroll:focus-visible { outline: 2px solid var(--focus); outline-offset: 2px; }
+table { border-collapse: collapse; }
 th, td { border: 1px solid var(--line); padding: .45em .8em; text-align: left; }
 th { background: var(--surface); }
 
