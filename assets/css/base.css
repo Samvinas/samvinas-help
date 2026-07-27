@@ -89,6 +89,12 @@ main :first-child { margin-top: 0; }
     padding-left: 32px;
     padding-right: 32px;
   }
+  /* The furniture outside the column follows the same inset, so the logo,
+     breadcrumb and footer stay on the same vertical line as the body text
+     rather than 12px adrift from it. */
+  header.site .inner,
+  nav.crumbs .inner,
+  footer.site { padding-left: 32px; padding-right: 32px; }
 }
 
 /* ---- section rail ---------------------------------------------------------
@@ -121,13 +127,22 @@ main :first-child { margin-top: 0; }
     gap: 40px;
     align-items: start;
   }
-  body.has-rail .shell > .page { max-width: none; margin: 0; padding-left: 0; padding-right: 0; }
+  /* The column fills its grid track, but keeps its internal padding: the text
+     must not sit against the edge of its own background. (This rule used to
+     zero the padding — harmless while .page was transparent and the "edge" was
+     imaginary, a visible defect the moment it gained a background.) */
+  body.has-rail .shell > .page { max-width: none; margin: 12px 0 0; }
 
   /* header, breadcrumb and footer mirror the grid so they line up with the
      content column rather than with the rail */
+  /* header, breadcrumb and footer mirror the grid so they line up with the
+     body text — 260px reaches the content track (20 shell + 200 rail + 40 gap),
+     plus the column's own 32px inset. Aligning to the text rather than to the
+     card's edge keeps the vertical rhythm the page had before the column
+     gained a background. */
   body.has-rail header.site .inner,
   body.has-rail nav.crumbs .inner,
-  body.has-rail footer.site { max-width: 1000px; padding-left: 260px; padding-right: 20px; }
+  body.has-rail footer.site { max-width: 1000px; padding-left: 292px; padding-right: 20px; }
 
   body.has-rail .section-nav {
     display: block;
