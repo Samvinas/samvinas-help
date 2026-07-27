@@ -3,6 +3,10 @@
 Voting is a fast convergence tool: a star toggle that surfaces the group's
 favourites in real time.
 
+> Converging well is a skill of its own — see
+> [convergence](/principles/convergence.html) for affirmative-first choosing and
+> why you keep the novel option alive a little longer than feels comfortable.
+
 ## How to run it
 
 - Pipe in the items to vote on (usually from Brainstorm or Clustering).

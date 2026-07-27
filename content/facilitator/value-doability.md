@@ -4,6 +4,9 @@ A 2D scoring tool: participants rate each idea on two dimensions and see the
 results as a scatter plot. Ideal for prioritising once you've generated and
 grouped ideas.
 
+> A [convergent](/principles/convergence.html) step. Scores start the conversation;
+> they don't end it — the disagreements are usually the useful part.
+
 ## How to run it
 
 - Pipe in the shortlist (often the top-voted ideas).

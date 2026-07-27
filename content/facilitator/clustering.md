@@ -3,6 +3,9 @@
 Clustering makes sense of a big idea list by grouping related items into named
 themes. It's a natural bridge from divergence to convergence.
 
+> Clustering arranges without cutting. If you want the group to *choose*, follow it
+> with a focusing tool — see [convergence](/principles/convergence.html).
+
 ## How to run it
 
 - Pipe in the ideas (e.g. from Brainstorm).

@@ -9,6 +9,9 @@ It's the base of a family: **ALoU**, **LCO** and **PMI** run on the same
 engine with different lenses. Reach for plain PPCO when you want the full
 develop-and-overcome cycle.
 
+> Affirmative first: strengths before concerns, and one concern at a time. The
+> reasoning is on [convergence](/principles/convergence.html).
+
 ## How to run it
 
 - Pipe in the ideas you want to develop (for example, the top ideas from a

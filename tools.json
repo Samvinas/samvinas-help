@@ -23,15 +23,26 @@
       "href": "/facilitator/",
       "items": [
         "getting-started",
-        "$generating",
-        "$focusing",
-        "$organising",
-        "instructions",
         {
-          "group": "Advanced tools",
+          "group": "Design and facilitate",
+          "items": [
+            "facilitating"
+          ]
+        },
+        {
+          "group": "Toolbox",
+          "items": [
+            "$generating",
+            "$focusing",
+            "$organising"
+          ]
+        },
+        {
+          "group": "Shaping the event",
           "items": [
             "breakout-groups",
-            "workspace-launcher"
+            "workspace-launcher",
+            "instructions"
           ]
         },
         {
@@ -55,12 +66,12 @@
       "title": "Taking part",
       "href": "/index.html",
       "items": [
-        "instructions",
         {
-          "group": "Advanced tools",
+          "group": "Shaping the event",
           "items": [
             "breakout-groups",
-            "workspace-launcher"
+            "workspace-launcher",
+            "instructions"
           ]
         },
         {
