@@ -71,8 +71,25 @@ nav.crumbs a { color: var(--link); text-decoration: none; }
 nav.crumbs a:hover { text-decoration: underline; }
 
 /* ---- content ------------------------------------------------------------- */
-.page { max-width: 720px; margin: 0 auto; padding: 24px 20px 64px; }
+/* The reading column sits on its own background (--bg-content), lifted off the
+   paper. The rail and the page furniture keep --bg, so the column reads as the
+   thing you are meant to be looking at. */
+.page {
+  max-width: 720px; margin: 0 auto; padding: 24px 20px 64px;
+  background: var(--bg-content);
+}
 main :first-child { margin-top: 0; }
+
+@media (min-width: 760px) {
+  /* Round and inset the column only once there is paper visible beside it.
+     Edge to edge on a phone, where a rounded strip would just look clipped. */
+  .page {
+    border-radius: 8px;
+    margin-top: 12px;
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+}
 
 /* ---- section rail ---------------------------------------------------------
  * A persistent list of the pages beside this one (its mode group, Principles,
@@ -171,6 +188,26 @@ main :first-child { margin-top: 0; }
     color: var(--text-dim);
   }
   .section-nav ul.sub a:hover { color: var(--text); }
+
+  /* ---- rail groups --------------------------------------------------------
+   * A labelled cluster of related pages (Utilities, Event management). The
+   * label is a span, not a link — there is no page behind it — so it must not
+   * look clickable: smaller and dimmer than an entry, no hover state.
+   *
+   * The nested <ul> inherits the spine, which would double it up beside the
+   * parent's, so the group's own spine is dropped and the children indent
+   * instead. */
+  .section-nav .section-nav__group {
+    display: block;
+    padding: 10px 0 3px 14px;
+    font-size: .68rem;
+    font-weight: 700;
+    letter-spacing: .05em;
+    text-transform: uppercase;
+    color: var(--text-dim);
+  }
+  .section-nav li.group > ul { border-left: 0; }
+  .section-nav li.group > ul > li > a { padding-left: 22px; }
 }
 
 @media print {
@@ -211,6 +248,23 @@ blockquote {
 hr { border: none; border-top: 1px solid var(--line); margin: 2em 0; }
 
 img { max-width: 100%; height: auto; }
+
+/* Screenshots carry a hairline so they read as a picture of the product rather
+   than as part of the page — the app's own chrome is pale and the reading
+   column is now white, so without an edge they dissolve into it.
+ *
+ * --accent (not a new colour): it is already the site's decorative accent, and
+ * green would collide with the app's own mode colouring, where green means a
+ * focusing tool. A border implying "this is a focusing tool" on a screenshot of
+ * Event Info would be worse than no border.
+ *
+ * Scoped to /screenshots/ so the diagrams in ../diagrams/ — which carry their
+ * own backgrounds and are meant to be redrawn per-org — stay untouched. */
+main img[src*="/screenshots/"] {
+  border: 1px solid var(--accent);
+  border-radius: 6px;
+  display: block;
+}
 
 table { border-collapse: collapse; margin: 1em 0; display: block; overflow-x: auto; }
 th, td { border: 1px solid var(--line); padding: .45em .8em; text-align: left; }

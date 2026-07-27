@@ -21,50 +21,229 @@
     "facilitator": {
       "title": "Facilitator guide",
       "href": "/facilitator/",
-      "items": ["getting-started", "$generating", "$focusing", "$organising",
-                "breakout-groups", "workspace-launcher", "instructions",
-                "timer", "raise-hand", "event-info",
-                "event-report", "csv-export"]
+      "items": [
+        "getting-started",
+        "$generating",
+        "$focusing",
+        "$organising",
+        "instructions",
+        {
+          "group": "Advanced tools",
+          "items": [
+            "breakout-groups",
+            "workspace-launcher"
+          ]
+        },
+        {
+          "group": "Utilities",
+          "items": [
+            "timer",
+            "raise-hand"
+          ]
+        },
+        {
+          "group": "Event management",
+          "items": [
+            "event-info",
+            "event-report",
+            "csv-export"
+          ]
+        }
+      ]
     },
     "participant": {
       "title": "Taking part",
       "href": "/index.html",
-      "items": ["instructions", "breakout-groups", "workspace-launcher",
-                "timer", "raise-hand", "event-info"]
+      "items": [
+        "instructions",
+        {
+          "group": "Advanced tools",
+          "items": [
+            "breakout-groups",
+            "workspace-launcher"
+          ]
+        },
+        {
+          "group": "Utilities",
+          "items": [
+            "timer",
+            "raise-hand"
+          ]
+        },
+        {
+          "group": "Event management",
+          "items": [
+            "event-info"
+          ]
+        }
+      ]
     },
     "principles": {
       "title": "Principles",
       "href": "/principles/",
-      "items": ["divergence", "convergence", "four-stages", "process-at-a-glance",
-                "deferring-judgement", "problems-as-questions"]
+      "items": [
+        "divergence",
+        "convergence",
+        "four-stages",
+        "process-at-a-glance",
+        "deferring-judgement",
+        "problems-as-questions"
+      ]
     }
   },
   "tools": [
-    { "slug": "brainstorm",         "name": "Brainstorm",           "mode": "generating", "blurb": "Collect lots of ideas quickly." },
-    { "slug": "voting",             "name": "Voting",               "mode": "focusing",   "blurb": "Surface the group's favourites with stars." },
-    { "slug": "ranking",            "name": "Ranking",              "mode": "focusing",   "blurb": "Put items in order of preference." },
-    { "slug": "clustering",         "name": "Clustering",           "mode": "organising", "blurb": "Group related ideas into themes." },
-    { "slug": "value-doability",    "name": "Value / Doability",    "mode": "focusing",   "blurb": "Score ideas on two dimensions and plot them." },
-    { "slug": "stakeholder-map",    "name": "Stakeholder Map",      "mode": "organising", "blurb": "Map people or groups on two axes." },
-    { "slug": "signup",             "name": "Sign Up",              "mode": "organising", "blurb": "Let people put their name to items." },
-    { "slug": "wordcloud",          "name": "Word Cloud",           "mode": "organising", "blurb": "See the words the group used most." },
-    { "slug": "brainwriting",       "name": "Brain Writing",        "mode": "generating", "blurb": "Spark new ideas from each other's provocations." },
-    { "slug": "tagged-brainstorm",  "name": "Tagged Brainstorming", "mode": "generating", "blurb": "Brainstorm straight into labelled buckets." },
-    { "slug": "rich-brainstorm",    "name": "Rich Brainstorm",      "mode": "generating", "blurb": "Brainstorm with formatting and freehand sketches." },
-    { "slug": "tagging",            "name": "Tagging",              "mode": "organising", "blurb": "Sort items into categories." },
-    { "slug": "workspace-launcher", "name": "Personal Workspace",   "blurb": "Give everyone their own mini-flow." },
-    { "slug": "five-whys",          "name": "Five Whys",            "mode": "generating", "blurb": "Dig to a root cause by asking \"why\" repeatedly." },
-    { "slug": "breakout-groups",    "name": "Breakout Groups",      "blurb": "Split into small groups with a shared workspace." },
-    { "slug": "elaboration",        "name": "Elaboration",          "mode": "generating", "blurb": "Develop chosen ideas in depth." },
-    { "slug": "ppco",               "name": "PPCO",                 "mode": "organising", "blurb": "Develop an idea: Pluses, Potentials, Concerns — and ways to overcome them." },
-    { "slug": "alou",               "name": "ALoU",                 "mode": "organising", "blurb": "Weigh an option: Advantages, Limitations & Unique Features." },
-    { "slug": "lco",                "name": "LCO",                  "mode": "organising", "blurb": "React to an option: Likes, Concerns & Opportunities." },
-    { "slug": "pmi",                "name": "PMI",                  "mode": "organising", "blurb": "A quick balanced scan: Plus, Minus & Interesting." },
-    { "slug": "evaluation-matrix",  "name": "Evaluation Matrix",    "mode": "focusing",   "blurb": "Score options against several criteria and compare them." },
-    { "slug": "backcasting",        "name": "Backcasting",          "mode": "organising", "blurb": "Place the steps toward a desired future onto a timeline." },
-    { "slug": "instructions",       "name": "Instructions",         "blurb": "A page of instructions or information for participants." },
-    { "slug": "timer",              "name": "Timer",                "utility": true, "blurb": "A shared countdown, visible to everyone." },
-    { "slug": "raise-hand",         "name": "Raise Hand",           "utility": true, "blurb": "A fair queue for speaking up." },
-    { "slug": "event-info",         "name": "Event Info",           "utility": true, "blurb": "A standing page for WiFi, schedule and venue details." }
+    {
+      "slug": "brainstorm",
+      "name": "Brainstorm",
+      "mode": "generating",
+      "blurb": "Collect lots of ideas quickly."
+    },
+    {
+      "slug": "voting",
+      "name": "Voting",
+      "mode": "focusing",
+      "blurb": "Surface the group's favourites with stars."
+    },
+    {
+      "slug": "ranking",
+      "name": "Ranking",
+      "mode": "focusing",
+      "blurb": "Put items in order of preference."
+    },
+    {
+      "slug": "clustering",
+      "name": "Clustering",
+      "mode": "organising",
+      "blurb": "Group related ideas into themes."
+    },
+    {
+      "slug": "value-doability",
+      "name": "Value / Doability",
+      "mode": "focusing",
+      "blurb": "Score ideas on two dimensions and plot them."
+    },
+    {
+      "slug": "stakeholder-map",
+      "name": "Stakeholder Map",
+      "mode": "organising",
+      "blurb": "Map people or groups on two axes."
+    },
+    {
+      "slug": "signup",
+      "name": "Sign Up",
+      "mode": "organising",
+      "blurb": "Let people put their name to items."
+    },
+    {
+      "slug": "wordcloud",
+      "name": "Word Cloud",
+      "mode": "organising",
+      "blurb": "See the words the group used most."
+    },
+    {
+      "slug": "brainwriting",
+      "name": "Brain Writing",
+      "mode": "generating",
+      "blurb": "Spark new ideas from each other's provocations."
+    },
+    {
+      "slug": "tagged-brainstorm",
+      "name": "Tagged Brainstorming",
+      "mode": "generating",
+      "blurb": "Brainstorm straight into labelled buckets."
+    },
+    {
+      "slug": "rich-brainstorm",
+      "name": "Rich Brainstorm",
+      "mode": "generating",
+      "blurb": "Brainstorm with formatting and freehand sketches."
+    },
+    {
+      "slug": "tagging",
+      "name": "Tagging",
+      "mode": "organising",
+      "blurb": "Sort items into categories."
+    },
+    {
+      "slug": "workspace-launcher",
+      "name": "Personal Workspace",
+      "blurb": "Give everyone their own mini-flow."
+    },
+    {
+      "slug": "five-whys",
+      "name": "Five Whys",
+      "mode": "generating",
+      "blurb": "Dig to a root cause by asking \"why\" repeatedly."
+    },
+    {
+      "slug": "breakout-groups",
+      "name": "Breakout Groups",
+      "blurb": "Split into small groups with a shared workspace."
+    },
+    {
+      "slug": "elaboration",
+      "name": "Elaboration",
+      "mode": "generating",
+      "blurb": "Develop chosen ideas in depth."
+    },
+    {
+      "slug": "ppco",
+      "name": "PPCO",
+      "mode": "organising",
+      "blurb": "Develop an idea: Pluses, Potentials, Concerns — and ways to overcome them."
+    },
+    {
+      "slug": "alou",
+      "name": "ALoU",
+      "mode": "organising",
+      "blurb": "Weigh an option: Advantages, Limitations & Unique Features."
+    },
+    {
+      "slug": "lco",
+      "name": "LCO",
+      "mode": "organising",
+      "blurb": "React to an option: Likes, Concerns & Opportunities."
+    },
+    {
+      "slug": "pmi",
+      "name": "PMI",
+      "mode": "organising",
+      "blurb": "A quick balanced scan: Plus, Minus & Interesting."
+    },
+    {
+      "slug": "evaluation-matrix",
+      "name": "Evaluation Matrix",
+      "mode": "focusing",
+      "blurb": "Score options against several criteria and compare them."
+    },
+    {
+      "slug": "backcasting",
+      "name": "Backcasting",
+      "mode": "organising",
+      "blurb": "Place the steps toward a desired future onto a timeline."
+    },
+    {
+      "slug": "instructions",
+      "name": "Instructions",
+      "blurb": "A page of instructions or information for participants."
+    },
+    {
+      "slug": "timer",
+      "name": "Timer",
+      "utility": true,
+      "blurb": "A shared countdown, visible to everyone."
+    },
+    {
+      "slug": "raise-hand",
+      "name": "Raise Hand",
+      "utility": true,
+      "blurb": "A fair queue for speaking up."
+    },
+    {
+      "slug": "event-info",
+      "name": "Event Info",
+      "utility": true,
+      "blurb": "A standing page for WiFi, schedule and venue details."
+    }
   ]
 }

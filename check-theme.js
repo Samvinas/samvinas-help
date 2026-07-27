@@ -40,6 +40,14 @@ const PAIRS = [
   ['--focus',    '--bg',      3.0, 'keyboard focus ring on page background'],
   ['--focus',    '--surface', 3.0, 'keyboard focus ring on raised panels'],
   ['--bg',       '--text',    4.5, 'skip-link label (inverted colours)'],
+  // The reading column has its own background, so every token that paints text
+  // or a focus ring inside it must be checked against that too — not only
+  // against the paper behind it.
+  ['--text',     '--bg-content', 4.5, 'body text in the reading column'],
+  ['--text-dim', '--bg-content', 4.5, 'secondary text in the reading column'],
+  ['--link',     '--bg-content', 4.5, 'links in the reading column'],
+  ['--focus',    '--bg-content', 3.0, 'keyboard focus ring in the reading column'],
+  ['--accent',   '--bg-content', 3.0, 'screenshot border against the reading column'],
 ];
 
 // ---- parse the two token blocks -------------------------------------------

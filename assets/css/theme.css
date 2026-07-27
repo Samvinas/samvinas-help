@@ -21,7 +21,8 @@
 
 :root {
   /* ---- Surfaces ------------------------------------------------------- */
-  --bg:      #EBEEEC;  /* page background ("paper")                        */
+  --bg:      #EBEEEC;  /* page background ("paper") — behind the rail too  */
+  --bg-content: #FFFFFF; /* the reading column itself, lifted off the paper */
   --surface: #E2E7E4;  /* raised panels: code blocks, callouts, footer     */
 
   /* ---- Text ----------------------------------------------------------- */
@@ -43,6 +44,9 @@
 @media (prefers-color-scheme: dark) {
   :root {
     --bg:       #14191D; /* deep basalt                                    */
+    --bg-content: #1A2126; /* reading column — lifted, the dark-mode
+                              equivalent of white-on-paper. Going lighter
+                              than this starts to glare in a dark room.   */
     --surface:  #1D242A;
     --text:     #DDE4E3; /* 13.7:1 on --bg                                 */
     --text-dim: #9BAAAC; /*  7.4:1 on --bg                                 */

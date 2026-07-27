@@ -27,6 +27,11 @@ const cfg = JSON.parse(fs.readFileSync(path.join(ROOT, 'tools.json'), 'utf8'));
 const site = cfg.site || {};
 const template = fs.readFileSync(path.join(ROOT, 'template.html'), 'utf8');
 
+// Where site-rooted asset paths ("/assets/…") resolve on disk, and the width
+// below which a screenshot gets its narrow variant if one exists.
+const SRC_ROOT = ROOT;
+const NARROW_BREAKPOINT = 640;
+
 marked.setOptions({ mangle: false, headerIds: false });
 
 /**
@@ -57,6 +62,35 @@ renderer.heading = function (text, level) {
   if (level === 2) pageHeadings.push({ id, text: text.replace(/<[^>]*>/g, '').trim() });
   return `<h${level} id="${id}">${text}</h${level}>`;
 };
+/* Responsive screenshots. A desktop-width screenshot is close to useless on a
+ * phone — the reader gets a wall of unreadable chrome. So when an image has a
+ * companion `<name>.narrow.png` beside it, emit a <picture> that serves the
+ * narrow capture to narrow viewports.
+ *
+ * This is art direction, not resolution switching: the two files are different
+ * captures of the same screen (phone layout vs desktop layout), not one image
+ * at two sizes — which is exactly the case <picture media> exists for, where
+ * srcset/sizes would be the wrong tool.
+ *
+ * Plain <img> when there is no variant, so nothing changes for the diagrams. */
+renderer.image = function (href, title, text) {
+  // `text` and `title` arrive from marked already HTML-escaped — running them
+  // through escAttr again turns &quot; into &amp;quot;, which a screen reader
+  // reads out literally. Only href needs escaping here.
+  const ttl = title ? ` title="${title}"` : '';
+  const img = `<img src="${escAttr(href)}" alt="${text || ''}"${ttl}>`;
+
+  const m = /^(.*)(\.[a-z0-9]+)$/i.exec(href);
+  if (!m) return img;
+  const narrowHref = `${m[1]}.narrow${m[2]}`;
+  // href is site-rooted ("/assets/…"); resolve against the assets tree on disk.
+  if (!narrowHref.startsWith('/') || !fs.existsSync(path.join(SRC_ROOT, narrowHref.slice(1)))) return img;
+
+  return `<picture>`
+    + `<source media="(max-width: ${NARROW_BREAKPOINT}px)" srcset="${escAttr(narrowHref)}">`
+    + `${img}</picture>`;
+};
+
 marked.setOptions({ renderer });
 
 // Derive a page <title> from the first markdown heading, else the file name.
@@ -185,17 +219,29 @@ function sectionNav(rel, prefix, pageTitles) {
     if (!conf) return '';
     title = conf.title;
     href = conf.href ? prefix + conf.href.replace(/^\//, '') : null;
-    entries = (conf.items || []).map((item) => {
+    const dir = sec.key === 'principles' ? 'principles' : sec.audience;
+
+    // An item is either a page slug, a "$mode" generated index, or a group:
+    // { "group": "Utilities", "items": [...] }. Groups nest one level only —
+    // deeper would out-structure the content it is navigating.
+    const entryFor = (item) => {
       if (item.startsWith('$')) {                       // a generated mode index
         const mode = item.slice(1);
         return cfg.modes?.[mode]
           ? { id: item, label: cfg.modes[mode].title, href: `${prefix}facilitator/tools-${mode}.html` }
           : null;
       }
-      const dir = sec.key === 'principles' ? 'principles' : sec.audience;
       const t = toolBySlug.get(item);
       const label = t ? t.name : shortTitle(pageTitles.get(`${dir}/${item}.md`) || item);
       return { id: item, label, href: `${prefix}${dir}/${item}.html` };
+    };
+
+    entries = (conf.items || []).map((item) => {
+      if (typeof item === 'object' && item.group) {
+        const children = (item.items || []).map(entryFor).filter(Boolean);
+        return children.length ? { group: item.group, children } : null;
+      }
+      return entryFor(item);
     }).filter(Boolean);
   }
   if (!entries.length) return '';
@@ -205,12 +251,20 @@ function sectionNav(rel, prefix, pageTitles) {
         `<li><a href="#${escAttr(h.id)}">${escAttr(h.text)}</a></li>`).join('')}</ul>`
     : '';
 
-  const items = entries.map(e => {
+  const liFor = (e) => {
     const here = e.id === sec.current;
     return `<li${here ? ' class="here"' : ''}>` +
       `<a href="${escAttr(e.href)}"${here ? ' aria-current="page"' : ''}>${escAttr(e.label)}</a>` +
       `${here ? subs : ''}</li>`;
-  }).join('');
+  };
+
+  // A group is a plain <li> holding a label and a nested <ul>. The label is not
+  // a link — there is no page behind it — so it is a <span>, and the nesting
+  // does the announcing for screen readers rather than a heading would.
+  const items = entries.map(e => e.group
+    ? `<li class="group"><span class="section-nav__group">${escAttr(e.group)}</span>`
+      + `<ul>${e.children.map(liFor).join('')}</ul></li>`
+    : liFor(e)).join('');
 
   // On a section's own landing page (/facilitator/, /principles/) the title IS
   // the current page — mark it, or nothing in the rail would be marked at all.
@@ -228,7 +282,9 @@ function render(rel, md, pageTitles = new Map()) {
   // rewrite them relative to this page's depth so the site works from any host
   // path (GitHub Pages project sites live under /<repo>/, not /).
   pageHeadings = [];   // the renderer fills this during parse; the rail reads it after
-  const html = marked.parse(md).replace(/(href|src)="\/(?!\/)/g, `$1="${prefix}`);
+  // srcset is in here too: <picture> sources are site-rooted like src/href, and
+  // a missed rewrite there fails only at narrow widths, where nobody looks.
+  const html = marked.parse(md).replace(/(href|src|srcset)="\/(?!\/)/g, `$1="${prefix}`);
   // the rail needs pageHeadings, so it must be built after the parse above
   const nav = sectionNav(rel, prefix, pageTitles);
   const out = template
