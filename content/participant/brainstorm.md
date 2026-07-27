@@ -3,6 +3,9 @@
 You'll see a box to type ideas and a growing list of everyone's contributions.
 Add as many as you can — quantity first, judgement later.
 
+> No idea is judged while the list is open — that comes later, and separately.
+> Go for quantity, and build on what others have written.
+
 ## How to take part
 
 - Type an idea and submit it. Add another. Keep going.

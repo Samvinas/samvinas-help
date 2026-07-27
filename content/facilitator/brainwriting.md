@@ -4,6 +4,9 @@ Brain Writing generates ideas silently and in parallel: each participant builds
 on provocations drawn from others' ideas. It levels participation and avoids the
 loudest-voice problem.
 
+> This is a [divergent](/principles/divergence.html) step: quantity first,
+> judgement later.
+
 ## How to run it
 
 - Seed it with a stimulus (or pipe in starting ideas).

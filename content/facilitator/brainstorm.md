@@ -3,6 +3,9 @@
 Brainstorm is your idea‑gathering tool: a shared, live list everyone contributes
 to at once. It's usually the opening, **divergent** step of a flow.
 
+> While the field is open, [defer judgement](/principles/deferring-judgement.html) —
+> evaluation is postponed, not abandoned, and it belongs in a focusing tool later.
+
 ## How to run it
 
 - Set a clear, open **Prompt** — the stem depends on where you are in the

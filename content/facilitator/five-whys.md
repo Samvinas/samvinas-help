@@ -4,6 +4,10 @@ Five Whys is a root-cause tool: the group drills from a problem to its underlyin
 causes by repeatedly asking "why," building a collaborative tree. You mark the
 true root causes for downstream work.
 
+> This is Clarify work — you are still deciding what the problem *is*. See
+> [the four stages](/principles/four-stages.html) and
+> [framing problems as questions](/principles/problems-as-questions.html).
+
 ## How to run it
 
 - State the problem clearly in the **Prompt**.
