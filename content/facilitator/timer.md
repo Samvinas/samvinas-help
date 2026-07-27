@@ -18,10 +18,10 @@ visible clock does the nagging so you don't have to.
 ## Fullscreen presenter mode
 
 Any device can turn the countdown into a full-screen clock — tap the footer
-chip (or its ⛶ icon). Useful for a laptop feeding a projector, or a spare
-tablet propped on a table. Fullscreen is a local view (each device chooses its
-own), the screen stays awake, and your pause/reset controls are available in
-the overlay.
+chip, anywhere along it, including the small expand icon at its right-hand
+end. Useful for a laptop feeding a projector, or a spare tablet propped on a
+table. Fullscreen is a local view (each device chooses its own), the screen
+stays awake, and your pause/reset controls are available in the overlay.
 
 ## Facilitation tips
 
