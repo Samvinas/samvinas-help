@@ -10,6 +10,8 @@ true root causes for downstream work.
 - Let the group branch; use the outliner view to follow the tree.
 - Mark the root causes — they're copied out as items for the next step.
 
+![The Five Whys tree on the display view. The starting question sits at the top, with a counter reading five nodes. Two first-level answers each indent to their own children, one of them two levels deep, so the chain of causes reads as a nested outline.](/assets/images/screenshots/five-whys-tree.png)
+
 ## Facilitation tips
 
 - Keep asking "why" past the first comfortable answer; the real cause is usually

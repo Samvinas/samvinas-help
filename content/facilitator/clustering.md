@@ -9,6 +9,8 @@ themes. It's a natural bridge from divergence to convergence.
 - Let the group select and group items; encourage clear names.
 - Groups collapse by default — expand to review them.
 
+![The Clustering view: two named groups, "People and support" and "Ways of working", each showing a count. The first is open, listing the three ideas inside it; the second is still collapsed. Below them an UNGROUPED section holds the two ideas nobody has placed yet.](/assets/images/screenshots/clustering-groups.png)
+
 ## Facilitation tips
 
 - Clustering is social, and a few people often lead. Invite quieter voices to

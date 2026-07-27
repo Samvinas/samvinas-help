@@ -26,6 +26,8 @@ back. Each step has a dropdown (0–9, or "–" to leave it unplaced); anyone ca
 set or change any step, and everyone sees the board update live. Unplaced steps
 sit in a pool at the top.
 
+![The Backcasting board: four numbered blocks left to right, labelled 0 "earliest" through 3 "nearest the future", each holding one step. Reading right to left gives the working-backwards order; reading left to right gives the plan.](/assets/images/screenshots/backcasting-board.png)
+
 ## What you can do next
 
 Because each step is tagged with its block, you can **pipe a single block
