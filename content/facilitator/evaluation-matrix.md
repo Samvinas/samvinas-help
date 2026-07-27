@@ -29,6 +29,8 @@ of its criterion averages), and how many people scored it. A small "±" is the
 spread — a large spread means the group disagreed on that cell, which is often
 the most interesting thing to discuss.
 
+![The Evaluation Matrix results grid: four options as rows, the criteria Impact, Effort and Cost as columns, with a mean and a plus-or-minus spread in each cell. A Total column ranks the options, and an n column shows how many people scored.](/assets/images/screenshots/evaluation-matrix.png)
+
 ## Tips
 
 - Best with a handful to a dozen options and a few clear criteria.
