@@ -3,15 +3,15 @@
 Samvinas is built around **Creative Problem Solving (CPS)** — a way of
 working, refined over seventy years of practice, that helps groups find
 solutions they wouldn't reach by discussion alone. You don't need theory to
-take part in an event, but knowing the shape of the process makes everything
-in it make more sense. This page is the two-minute version, with paths to go
-deeper.
+take part in an event, but once you know the shape of the process,
+everything in it makes more sense. This page is the two-minute version, with
+paths to go deeper.
 
 ## The heartbeat: diverge, then converge
 
-Every piece of creative work alternates between two moves — first **widening**
-the field of options, then **narrowing** it to choices. Doing both *at the
-same time* is what kills most meetings.
+Every piece of creative work alternates between two moves — first
+**widening** the field of options, then **narrowing** it to choices. Doing
+both *at the same time* is what kills most meetings.
 
 ![Creative work alternates between two phases: diverging to generate many options, then converging to make choices.](/assets/images/diagrams/diverge-converge.svg)
 
@@ -46,7 +46,7 @@ around the same stages.
 ## Lineage
 
 None of this is our invention. CPS began in the 1950s with Alex Osborn — the
-adman who coined "brainstorming" — and Sid Parnes, and has been refined by
+adman who coined "brainstorming" — and Sid Parnes, and it has been refined by
 seventy years of practitioners and researchers since: Ruth Noller, Roger
 Firestien, and Gerard Puccio, Marie Mance and Mary Murdock, among many
 others. These pages paraphrase that shared tradition; the tools in Samvinas
@@ -54,5 +54,5 @@ are built to run it.
 
 ---
 
-Running an event? The **[facilitator guide](/facilitator/)** shows which tools
-support each move.
+Running an event? The **[facilitator guide](/facilitator/)** shows which
+tools support each move.

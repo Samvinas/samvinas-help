@@ -2,8 +2,9 @@
 
 CPS moves through four stages — **Clarify, Ideate, Develop, Implement** —
 and inside each one the [diverge](/principles/divergence.html)–[converge](/principles/convergence.html)
-heartbeat runs at least once. Groups rarely march through them in a straight
-line; knowing which stage you're *in* is the practical skill.
+heartbeat runs at least once. Groups rarely march through the stages in a
+straight line, and they don't need to; the practical skill is knowing which
+stage the work is *in*.
 
 ![The four stages — Clarify, Ideate, Develop, Implement — arranged in a clockwise cycle, each containing a small diverge-then-converge pair. At the centre, connected to all four, sits Assess the situation.](/assets/images/diagrams/four-stages.svg)
 
@@ -11,12 +12,13 @@ line; knowing which stage you're *in* is the practical skill.
 
 The hub of the model isn't a stage — it's a habit. **Assessing the
 situation** means pausing to take stock: what do we know, what do we have,
-and which stage does the work need next? It's the move you return to between
-stages, and it's why the process is drawn as a cycle around a centre rather
-than a straight line — a group might assess and realise it needs to go *back*
-to Clarify, or that it can skip straight to Develop because good ideas
-already exist. **[The process at a glance](/principles/process-at-a-glance.html)**
-gives a starting condition for every step — use it to decide where to enter.
+and which stage does the work need next? It's the move a group returns to
+between stages, and it's why the process is drawn as a cycle around a centre
+rather than a straight line. A group might assess and realise it needs to go
+*back* to Clarify — or that it can skip straight to Develop, because good
+ideas already exist.
+**[The process at a glance](/principles/process-at-a-glance.html)** gives a
+starting condition for every step; use it to decide where to enter.
 
 ## 1. Clarify — find the right problem
 
@@ -40,8 +42,8 @@ its own, each with the heartbeat inside it:
 
 ## 2. Ideate — find many answers
 
-Generate options against the clarified question — wide, plentiful, judgement
-deferred — then converge on the promising few.
+With the question clarified, generate options against it — wide, plentiful,
+judgement deferred — and then converge on the promising few.
 **Done looks like:** a shortlist the group is genuinely curious about.
 *Samvinas tools:* the [generating tools](/facilitator/tools-generating.html),
 then [Voting](/facilitator/voting.html) or
@@ -49,9 +51,9 @@ then [Voting](/facilitator/voting.html) or
 
 ## 3. Develop — make the chosen ideas strong
 
-Take the shortlist and strengthen it: name what's good, surface concerns as
-questions, and answer them. This is where a fragile idea becomes a workable
-one.
+Take the shortlist and strengthen it: name what is good, surface concerns as
+questions, and answer them. This is the stage where a fragile idea becomes a
+workable one.
 **Done looks like:** ideas with their major concerns overcome — or
 consciously retired.
 *Samvinas tools:* [PPCO](/facilitator/ppco.html) and its
@@ -61,8 +63,8 @@ consciously retired.
 
 ## 4. Implement — turn ideas into action
 
-Work out the path: what happens first, who does what, what the world needs
-to accept the idea.
+Finally, work out the path: what happens first, who does what, and what the
+world will need before it accepts the idea.
 **Done looks like:** named next steps with names on them.
 *Samvinas tools:* [Backcasting](/facilitator/backcasting.html),
 [Sign Up](/facilitator/signup.html),

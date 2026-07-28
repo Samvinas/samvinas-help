@@ -41,11 +41,10 @@ go narrower) until the question feels both open and concrete — the
 
 ## Where Samvinas leans on this
 
-- A good brainstorm prompt *is* a well-framed question — write "How might
-  we…?" rather than a topic heading.
-- In [PPCO](/facilitator/ppco.html) and its relatives, concerns are phrased
-  as questions precisely so they can be *overcome* rather than merely
-  recorded.
+A good brainstorm prompt *is* a well-framed question — so write "How might
+we…?" rather than a topic heading. And in [PPCO](/facilitator/ppco.html) and
+its relatives, concerns are phrased as questions precisely so they can be
+*overcome* rather than merely recorded.
 
 Framing and [deferring judgement](/principles/deferring-judgement.html) are
 partners: one keeps the door open, the other keeps ideas walking through it.
