@@ -24,6 +24,8 @@
   --bg:      #EBEEEC;  /* page background ("paper") — behind the rail too  */
   --bg-content: #FFFFFF; /* the reading column itself, lifted off the paper */
   --surface: #E2E7E4;  /* raised panels: code blocks, callouts, footer     */
+  --bg-header: #F8FAFD; /* top menu bar — Google Drive's bar grey (Andy,
+                           2026-07-31), lighter than the paper for legibility */
 
   /* ---- Text ----------------------------------------------------------- */
   --text:     #161D20; /* body text        — 14.6:1 on --bg  (min 4.5)    */
@@ -48,6 +50,8 @@
                               equivalent of white-on-paper. Going lighter
                               than this starts to glare in a dark room.   */
     --surface:  #1D242A;
+    --bg-header: #14191D; /* dark mode: header stays on the paper — the
+                             Drive-grey change is a light-scheme decision  */
     --text:     #DDE4E3; /* 13.7:1 on --bg                                 */
     --text-dim: #9BAAAC; /*  7.4:1 on --bg                                 */
     --link:     #4FB3BE; /*  7.2:1 on --bg                                 */

@@ -52,6 +52,7 @@ light-only). Each token has one job:
 |---|---|---|
 | `--bg` | page background | — |
 | `--surface` | code blocks, tables, callout panels | — |
+| `--bg-header` | top menu bar (falls back to `--bg` if absent) | `--text`/`--text-dim` ≥ 4.5:1 and `--focus` ≥ 3:1 on it |
 | `--text` | body text | ≥ 4.5:1 on `--bg` and `--surface` |
 | `--text-dim` | secondary text (labels, footer, quotes) | ≥ 4.5:1 on `--bg` and `--surface` |
 | `--link` | links | ≥ 4.5:1 on `--bg` and `--surface` |

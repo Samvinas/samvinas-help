@@ -45,7 +45,7 @@ a:focus-visible, button:focus-visible, summary:focus-visible {
 }
 
 /* ---- header -------------------------------------------------------------- */
-header.site { border-bottom: 1px solid var(--line); padding: 14px 20px; }
+header.site { background: var(--bg-header, var(--bg)); border-bottom: 1px solid var(--line); padding: 14px 20px; }
 header.site .inner {
   max-width: 720px; margin: 0 auto;
   display: flex; align-items: center; gap: 12px; flex-wrap: wrap;

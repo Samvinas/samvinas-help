@@ -33,8 +33,11 @@ const css = fs.readFileSync(path.join(ROOT, 'assets/css/theme.css'), 'utf8');
 const PAIRS = [
   ['--text',     '--bg',      4.5, 'body text on page background'],
   ['--text',     '--surface', 4.5, 'text in code blocks / tables / callouts'],
+  ['--text',     '--bg-header', 4.5, 'site name / home link on the menu bar'],
   ['--text-dim', '--bg',      4.5, 'secondary text (audience label, footer, blockquotes)'],
   ['--text-dim', '--surface', 4.5, 'secondary text on raised panels'],
+  ['--text-dim', '--bg-header', 4.5, 'audience label / switcher on the menu bar'],
+  ['--focus',    '--bg-header', 3.0, 'keyboard focus ring on the menu bar'],
   ['--link',     '--bg',      4.5, 'links on page background'],
   ['--link',     '--surface', 4.5, 'links inside callouts / footer'],
   ['--focus',    '--bg',      3.0, 'keyboard focus ring on page background'],
