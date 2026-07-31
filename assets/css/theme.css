@@ -21,21 +21,23 @@
 
 :root {
   /* ---- Surfaces ------------------------------------------------------- */
-  --bg:      #EBEEEC;  /* page background ("paper") — behind the rail too  */
+  --bg:      #F8FAFD;  /* page background ("paper") — behind the rail too.
+                          Google Drive's bar grey (Andy, 2026-07-31), matching
+                          --bg-header so bar, rail and paper read as one.     */
   --bg-content: #FFFFFF; /* the reading column itself, lifted off the paper */
   --surface: #E2E7E4;  /* raised panels: code blocks, callouts, footer     */
   --bg-header: #F8FAFD; /* top menu bar — Google Drive's bar grey (Andy,
                            2026-07-31), lighter than the paper for legibility */
 
   /* ---- Text ----------------------------------------------------------- */
-  --text:     #161D20; /* body text        — 14.6:1 on --bg  (min 4.5)    */
-  --text-dim: #47555A; /* secondary text   —  6.6:1 on --bg  (min 4.5)    */
+  --text:     #161D20; /* body text        — 16.3:1 on --bg  (min 4.5)    */
+  --text-dim: #47555A; /* secondary text   —  7.4:1 on --bg  (min 4.5)    */
 
   /* ---- Brand ---------------------------------------------------------- */
-  --link:   #1C5C64;   /* links            —  6.5:1 on --bg  (min 4.5)    */
+  --link:   #1C5C64;   /* links            —  7.3:1 on --bg  (min 4.5)    */
   --accent: #C6763A;   /* decorative accent (blockquote bar, logo bar).
                           DECORATION ONLY — never use for text under 24px  */
-  --focus:  #B4682E;   /* keyboard focus ring — 3.6:1 on --bg (min 3.0)   */
+  --focus:  #B4682E;   /* keyboard focus ring — 4.1:1 on --bg (min 3.0)   */
 
   /* ---- Lines ---------------------------------------------------------- */
   --line: #C4CDC9;     /* hairline rules — decorative, no contrast floor   */
