@@ -146,6 +146,12 @@
       "blurb": "Let people put their name to items."
     },
     {
+      "slug": "soapbox",
+      "name": "Soapbox",
+      "mode": "organising",
+      "blurb": "Queue up volunteers for short, uninterrupted talks."
+    },
+    {
       "slug": "wordcloud",
       "name": "Word Cloud",
       "mode": "organising",
