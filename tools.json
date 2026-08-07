@@ -261,6 +261,12 @@
       "name": "Event Info",
       "utility": true,
       "blurb": "A standing page for WiFi, schedule and venue details."
+    },
+    {
+      "slug": "importer",
+      "name": "Importer",
+      "mode": "generating",
+      "blurb": "Paste in a starting set of ideas."
     }
   ]
 }
