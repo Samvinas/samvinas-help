@@ -41,12 +41,16 @@ jobs:
     steps:
       - id: deployment
         uses: actions/deploy-pages@v4
-      # Cloudflare edge-caches the HTML and ignores GitHub Pages' revalidation
-      # headers, so without a purge a deploy serves stale pages until TTL
-      # (bit us 2026-08-10: the tabbed tool pages sat behind week-old cache).
-      # Token is scoped to Zone → Cache Purge on samvinas.com only.
+      # help.samvinas.com is served by Cloudflare Worker static assets, which
+      # Cloudflare builds from this repo on push — independently of this
+      # workflow. The edge cache pins the OLD HTML past deploys (bit us
+      # 2026-08-10: tabbed tool pages sat behind week-old cache), so we purge —
+      # but only after a delay, or the purge races Cloudflare's own build and
+      # the edge re-caches stale pages. Token is scoped to Zone → Cache Purge
+      # on samvinas.com only.
       - name: Purge Cloudflare cache (help.samvinas.com)
         run: |
+          sleep 120
           curl -sf -X POST \
             -H "Authorization: Bearer ${{ secrets.CLOUDFLARE_CACHE_TOKEN }}" \
             -H "Content-Type: application/json" \
