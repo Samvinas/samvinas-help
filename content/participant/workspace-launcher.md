@@ -10,5 +10,6 @@ Everyone gets their own.
 
 ## Tips
 
-- Take your time — no one else sees your workspace unless the facilitator gathers
-  results.
+- Take your time — other participants can't see your workspace. When the group
+  reconvenes you'll usually be invited to share your best item; the rest stays
+  yours. (The facilitator can open a workspace's report if needed.)

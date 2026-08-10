@@ -110,6 +110,35 @@ renderer.table = function (header, body) {
 
 marked.setOptions({ renderer });
 
+/**
+ * Tool-page tabs. A page that authors two or more of the sections below as
+ * h2s — ## Samvinas / ## Paper and pen / ## When & why — gets them wrapped as
+ * tab panels; assets/js/tabs.js turns the group into a WAI-ARIA tablist in the
+ * browser. Without JS (and in print) the wrapper is inert and the sections
+ * render stacked, exactly as authored.
+ *
+ * A panel runs from its h2 to the next tab h2. The last panel ends at the
+ * first <hr> after it (the house "editing this page" footer stays outside the
+ * tabs), else at the end of the page. Content before the first tab h2 — the
+ * tool's intro — stays above the tabs and is always visible.
+ */
+const TAB_IDS = ['samvinas', 'paper-and-pen', 'when-why'];
+function tabify(html) {
+  const re = new RegExp(`<h2 id="(${TAB_IDS.join('|')})">`, 'g');
+  const hits = [...html.matchAll(re)];
+  if (hits.length < 2) return html;
+  const starts = hits.map(h => h.index);
+  const hrAfter = html.slice(starts[starts.length - 1]).search(/<hr\s*\/?>/);
+  const end = hrAfter === -1 ? html.length : starts[starts.length - 1] + hrAfter;
+  const panels = starts.map((s, i) => {
+    const e = i + 1 < starts.length ? starts[i + 1] : end;
+    return `<section class="tab-panel" id="panel-${hits[i][1]}">${html.slice(s, e)}</section>`;
+  }).join('');
+  return html.slice(0, starts[0])
+    + `<div class="tabs" data-tabs>${panels}</div>`
+    + html.slice(end);
+}
+
 // Derive a page <title> from the first markdown heading, else the file name.
 function titleOf(md, fallback) {
   const m = md.match(/^\s*#\s+(.+)\s*$/m);
@@ -301,7 +330,7 @@ function render(rel, md, pageTitles = new Map()) {
   pageHeadings = [];   // the renderer fills this during parse; the rail reads it after
   // srcset is in here too: <picture> sources are site-rooted like src/href, and
   // a missed rewrite there fails only at narrow widths, where nobody looks.
-  const html = marked.parse(md).replace(/(href|src|srcset)="\/(?!\/)/g, `$1="${prefix}`);
+  const html = tabify(marked.parse(md).replace(/(href|src|srcset)="\/(?!\/)/g, `$1="${prefix}`));
   // the rail needs pageHeadings, so it must be built after the parse above
   const nav = sectionNav(rel, prefix, pageTitles);
   const out = template

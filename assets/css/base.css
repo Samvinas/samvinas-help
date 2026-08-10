@@ -296,3 +296,39 @@ footer.site {
   border-top: 1px solid var(--line);
 }
 footer.site a { color: var(--link); }
+
+/* ---- tool-page tabs (build.js tabify + assets/js/tabs.js) ----------------- */
+/* Static form is stacked sections; everything below only bites once tabs.js
+   has added .tabs--ready. Selection is announced by aria-selected and shown
+   two ways (text colour + accent underline) — never colour alone, and the
+   accent stays decorative: the label itself is --text/--text-dim, pairs the
+   reading column already uses. */
+.tablist { display: flex; flex-wrap: wrap; gap: 2px;
+  border-bottom: 1px solid var(--line); margin: 1.6em 0 1.1em; }
+.tablist [role="tab"] {
+  background: none; border: none; cursor: pointer; font: inherit;
+  font-weight: 600; color: var(--text-dim);
+  padding: .55em .95em; min-height: 44px;         /* touch target */
+  border-bottom: 3px solid transparent; margin-bottom: -1px;
+}
+.tablist [role="tab"]:hover { color: var(--text); }
+.tablist [role="tab"][aria-selected="true"] {
+  color: var(--text); border-bottom-color: var(--accent);
+}
+
+.visually-hidden {
+  position: absolute; width: 1px; height: 1px; margin: -1px;
+  padding: 0; border: 0; clip-path: inset(50%); overflow: hidden;
+  white-space: nowrap;
+}
+
+/* Print: no tabs to click, so show everything — panels stacked with their
+   headings restored, which is exactly the no-JS reading order. */
+@media print {
+  .tabs--ready .tablist { display: none; }
+  .tabs--ready .tab-panel[hidden] { display: block; }
+  .tabs--ready .tab-panel > h2.visually-hidden {
+    position: static; width: auto; height: auto; margin: revert;
+    clip-path: none; overflow: visible; white-space: normal;
+  }
+}
