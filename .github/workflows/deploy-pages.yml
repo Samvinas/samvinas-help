@@ -41,3 +41,15 @@ jobs:
     steps:
       - id: deployment
         uses: actions/deploy-pages@v4
+      # Cloudflare edge-caches the HTML and ignores GitHub Pages' revalidation
+      # headers, so without a purge a deploy serves stale pages until TTL
+      # (bit us 2026-08-10: the tabbed tool pages sat behind week-old cache).
+      # Token is scoped to Zone → Cache Purge on samvinas.com only.
+      - name: Purge Cloudflare cache (help.samvinas.com)
+        run: |
+          curl -sf -X POST \
+            -H "Authorization: Bearer ${{ secrets.CLOUDFLARE_CACHE_TOKEN }}" \
+            -H "Content-Type: application/json" \
+            --data '{"hosts":["help.samvinas.com"]}' \
+            "https://api.cloudflare.com/client/v4/zones/${{ secrets.CLOUDFLARE_ZONE_ID }}/purge_cache" \
+            | grep -q '"success":true'
