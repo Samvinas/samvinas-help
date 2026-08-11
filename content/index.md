@@ -38,40 +38,9 @@ Pick the path that matches where you are today.
 </ul>
 </nav>
 
-## The site at a glance
-
-However you come in, the paths cross the same handful of pages — you can go
-straight to any of them:
-
-- **[Setting up an event](/facilitator/getting-started.html)** — the
-  mechanics, end to end: create an event, build a flow, pipe one tool into
-  another, get people in, get the results out.
-- **[Option Explorer](/facilitator/option-explorer.html)** — working out where
-  your event should enter the creative process and turning that into a flow —
-  or starting from a template.
-- **[The toolbox](/facilitator/)** — what each tool does and how to run it,
-  indexed by the move it makes:
-  [generating](/facilitator/tools-generating.html) ·
-  [focusing](/facilitator/tools-focusing.html) ·
-  [organising](/facilitator/tools-organising.html) — each page with the
-  three tabs: Samvinas · Paper and pen · When & why.
-- **[Facilitating the room](/facilitator/facilitating.html)** — six habits
-  that carry most of the weight of facilitation.
-- **[Principles refresher](/principles/)** — diverge and converge, the four
-  stages, deferring judgement — with
-  [the process at a glance](/principles/process-at-a-glance.html) when you're
-  deciding where to start.
+---
 
 These pages are a **starting point** — the organisation running your event may
 have tailored them, translated them, or added their own guidance.
-
-## For participants
-
-You don't need any of this to take part in an event — your facilitator's join
-code is enough. Tool guides live at `participant/<tool>.html`, and you'll
-usually reach the right one by tapping the **?** in the top corner while
-using a tool.
-
----
 
 *Powered by [Samvinas](https://samvinas.com).*

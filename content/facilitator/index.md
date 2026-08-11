@@ -1,9 +1,8 @@
 # Facilitator guide
 
 Everything here is for the person **running** a Samvinas event. (If you're
-taking part in one instead, your guides are on the
-[participant pages](/index.html) — and you'll usually reach the right one
-from the **?** inside whichever tool you're using.)
+taking part in one instead, you don't need any of this — and you'll find
+your own guide behind the **?** inside whichever tool you're using.)
 
 These pages assume you already know your way around a creative process: they
 show you how Samvinas works and jog your memory on the method, rather than
