@@ -13,7 +13,7 @@ and **When & why** (deciding what to do, and when).
 Everything is deliberately brief and to the point. This is a working
 reference, not a training course — though you'll find links to deeper
 information throughout, and to
-[training courses](https://knowinnovation.com) when you want more than a
+[training courses](https://academy.knowinnovation.com) when you want more than a
 refresher.
 
 Pick the path that matches where you are today.
