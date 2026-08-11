@@ -1,33 +1,63 @@
 # Samvinas Help
 
-Welcome. These pages cover how to run a Samvinas event, and the tools you'll use
-in one.
+Welcome. These pages cover how to run a Samvinas event and the tools you'll
+use in one — a working reference to come back to, not a course to read
+through. Pick the path that matches where you are today.
 
-They're a **starting point** — the organisation running your event may have
-tailored them, translated them, or added their own guidance.
+<nav class="paths" aria-label="Choose your path">
+<ul>
+<li class="path">
+<h2 class="path__title"><a href="/facilitator/getting-started.html">Quick <span class="path__end">start <span class="path__arrow" aria-hidden="true">→</span></span></a></h2>
+<p class="path__when">You already know what you want to do with your colleagues — you just need the mechanics.</p>
+<p class="path__where">Create an event, build a flow of tools, get people in, get the results out.</p>
+</li>
+<li class="path">
+<h2 class="path__title"><a href="/facilitator/option-explorer.html">Option <span class="path__end">Explorer <span class="path__arrow" aria-hidden="true">→</span></span></a></h2>
+<p class="path__when">You're still choosing a design for your event.</p>
+<p class="path__where">Session shapes that work, and the creative process underneath them.</p>
+</li>
+<li class="path">
+<h2 class="path__title"><a href="/facilitator/facilitating.html">Facilitation <span class="path__end">Tips <span class="path__arrow" aria-hidden="true">→</span></span></a></h2>
+<p class="path__when">You want a quick guide to facilitating — one tool, or a whole event.</p>
+<p class="path__where">Six habits that carry the room, plus a judgment call on every tool page.</p>
+</li>
+</ul>
+</nav>
 
-## For facilitators
+## The site at a glance
 
-Three kinds of page, depending on what you're doing right now:
+However you come in, the paths cross the same handful of pages — you can go
+straight to any of them:
 
-- **[Set up your first event](/facilitator/getting-started.html)** — the
+- **[Setting up an event](/facilitator/getting-started.html)** — the
   mechanics, end to end: create an event, build a flow, pipe one tool into
   another, get people in, get the results out.
-- **[Design and facilitate](/facilitator/facilitating.html)** — a refresher on
-  the craft: six habits that carry most of the weight, plus the
-  [principles](/principles/) and
-  [the process at a glance](/principles/process-at-a-glance.html) when you're
-  shaping a session.
+- **[Option Explorer](/facilitator/option-explorer.html)** — working out where
+  your event should enter the creative process and turning that into a flow —
+  or starting from a template.
 - **[The toolbox](/facilitator/)** — what each tool does and how to run it,
   indexed by the move it makes:
   [generating](/facilitator/tools-generating.html) ·
   [focusing](/facilitator/tools-focusing.html) ·
-  [organising](/facilitator/tools-organising.html).
+  [organising](/facilitator/tools-organising.html). Every tool page has three
+  tabs: **Samvinas** (running it in the app), **Paper and pen** (the same
+  exercise with analogue materials) and **When & why** (the judgment call).
+- **[Facilitating the room](/facilitator/facilitating.html)** — six habits
+  that carry most of the weight of facilitation.
+- **[Principles refresher](/principles/)** — diverge and converge, the four
+  stages, deferring judgement — with
+  [the process at a glance](/principles/process-at-a-glance.html) when you're
+  deciding where to start.
+
+These pages are a **starting point** — the organisation running your event may
+have tailored them, translated them, or added their own guidance.
 
 ## For participants
 
-Tool guides live at `participant/<tool>.html` — you'll usually reach the right
-one by tapping the **?** in the top corner while using a tool.
+You don't need any of this to take part in an event — your facilitator's join
+code is enough. Tool guides live at `participant/<tool>.html`, and you'll
+usually reach the right one by tapping the **?** in the top corner while
+using a tool.
 
 ---
 

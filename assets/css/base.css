@@ -316,6 +316,37 @@ footer.site a { color: var(--link); }
   color: var(--text); border-bottom-color: var(--accent);
 }
 
+/* ---- landing path cards ---------------------------------------------------
+ * The three doors on the home page (content/index.md authors them as raw
+ * HTML). Each card holds exactly ONE link — the title — stretched over the
+ * whole card via ::after, so the target is generous and nothing competes with
+ * it. Selection cues are never colour alone: hover moves the border AND
+ * underlines the title; keyboard focus rings the whole card.
+ * Tokens only, all on --bg pairs check-theme.js already enforces. */
+.paths ul {
+  list-style: none; margin: 1.2em 0 1.6em; padding: 0;
+  display: grid; gap: 12px;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+}
+.paths li.path {
+  position: relative; margin: 0;
+  background: var(--bg);
+  border: 1px solid var(--line); border-radius: 8px;
+  padding: 16px 18px 14px;
+}
+.paths li.path:hover { border-color: var(--accent); }
+.path__title { font-size: 1.1rem; margin: 0 0 .4em; letter-spacing: -0.01em; }
+.path__title a { color: var(--link); text-decoration: none; }
+.path__title a::after { content: ""; position: absolute; inset: 0; border-radius: 8px; }
+.paths li.path:hover .path__title a { text-decoration: underline; text-underline-offset: 2px; }
+.path__title a:focus-visible { outline: none; }
+.path__title a:focus-visible::after { outline: 2px solid var(--focus); outline-offset: 2px; }
+.path__end { white-space: nowrap; }  /* never strand the arrow on its own line */
+.path__arrow { display: inline-block; }
+.paths li.path:hover .path__arrow { transform: translateX(3px); transition: transform .15s ease; }
+.path__when { margin: 0 0 .5em; font-size: .92rem; line-height: 1.5; color: var(--text); }
+.path__where { margin: 0; font-size: .85rem; line-height: 1.5; color: var(--text-dim); }
+
 .visually-hidden {
   position: absolute; width: 1px; height: 1px; margin: -1px;
   padding: 0; border: 0; clip-path: inset(50%); overflow: hidden;

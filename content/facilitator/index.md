@@ -17,6 +17,9 @@ teaching it from scratch.
 
 ## Design and facilitate
 
+- **[Option Explorer](/facilitator/option-explorer.html)** — choosing a
+  design for your event: where to enter the process, how to turn a step into
+  a flow, and when to start from a template.
 - **[Facilitating the room](/facilitator/facilitating.html)** — six habits
   that carry most of the weight.
 - **[Principles refresher](/principles/)** — diverge and converge, the four
