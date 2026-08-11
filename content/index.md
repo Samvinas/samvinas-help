@@ -1,8 +1,22 @@
 # Samvinas Help
 
-Welcome. These pages cover how to run a Samvinas event and the tools you'll
-use in one — a working reference to come back to, not a course to read
-through. Pick the path that matches where you are today.
+This is a guide to designing events — working sessions where you and your
+colleagues generate effective solutions to tricky problems, and carry them
+through to action. Samvinas is the app built for running those sessions, but
+the guide starts one step earlier: with what to do, in what order, and why.
+
+So most pages here answer the same question three ways — the three tabs
+you'll find on every tool page: **Samvinas** (running it in the app),
+**Paper and pen** (running it with markers, sticky notes and wall space),
+and **When & why** (deciding what to do, and when).
+
+Everything is deliberately brief and to the point. This is a working
+reference, not a training course — though you'll find links to deeper
+information throughout, and to
+[training courses](https://knowinnovation.com) when you want more than a
+refresher.
+
+Pick the path that matches where you are today.
 
 <nav class="paths" aria-label="Choose your path">
 <ul>
@@ -39,9 +53,8 @@ straight to any of them:
   indexed by the move it makes:
   [generating](/facilitator/tools-generating.html) ·
   [focusing](/facilitator/tools-focusing.html) ·
-  [organising](/facilitator/tools-organising.html). Every tool page has three
-  tabs: **Samvinas** (running it in the app), **Paper and pen** (the same
-  exercise with analogue materials) and **When & why** (the judgment call).
+  [organising](/facilitator/tools-organising.html) — each page with the
+  three tabs: Samvinas · Paper and pen · When & why.
 - **[Facilitating the room](/facilitator/facilitating.html)** — six habits
   that carry most of the weight of facilitation.
 - **[Principles refresher](/principles/)** — diverge and converge, the four
