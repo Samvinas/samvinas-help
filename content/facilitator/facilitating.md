@@ -5,6 +5,13 @@ handful of habits. Here are the six we keep returning to — in a Samvinas
 event, or any meeting at all. The bold line in each section is the habit;
 the rest is the reasoning, there when you want it.
 
+If it's a single tool you're about to facilitate, you want
+[the toolbox](/facilitator/) instead: **every tool's page carries its own
+facilitation guidance** — the *When & why* tab is the judgment call (when to
+reach for it, and what to watch for while it runs), beside the app mechanics
+under *Samvinas* and an analogue recipe under *Paper and pen*. This page is
+about the room itself — the habits that hold up whichever tools you run.
+
 ## Guard the process; stay out of the content
 
 **The problem belongs to the group; the way of working belongs to you.** Your
