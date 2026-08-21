@@ -1,22 +1,13 @@
 # Samvinas Help
 
-This is a guide to designing events — working sessions where you and your
-colleagues generate effective solutions to tricky problems, and carry them
-through to action. Samvinas is the app built for running those sessions, but
-the guide starts one step earlier: with what to do, in what order, and why.
+Welcome to the help system. We created this site to provide you with detailed guidance on using the various tools in Samvinas, along with more general information about how to design and facilitate problem solving events. It is important to note that this is not a course, but rather a 'How to...' guide. If you would like to know more about Creative Problem Solving, you can visit [the Academy](https://academy.knowinnovation.com) where we offer a range of courses and resources.
 
-So most pages here answer the same question three ways — the three tabs
-you'll find on every tool page: **Samvinas** (running it in the app),
-**Paper and pen** (running it with markers, sticky notes and wall space),
-and **When & why** (deciding what to do, and when).
+Samvinas is designed to support small group problem solving. We imagine you using the system with your colleagues to collect ideas, vote on preferences and build action plans. However, there are many situations where using sticky notes and markers is the best approach. In fact, it is quite common to run a meeting that mixes both ways of working. For that reason, each of the tool pages contains the three tabs: 
+- **Samvinas** (running it in the app),
+- **Paper and pen** (running it with markers, sticky notes and wall space),
+- **When & why** (deciding what to do, and when).
 
-Everything is deliberately brief and to the point. This is a working
-reference, not a training course — though you'll find links to deeper
-information throughout, and to
-[training courses](https://academy.knowinnovation.com) when you want more than a
-refresher.
-
-Pick the path that matches where you are today.
+We have arrange the content into three paths. Pick the path that matches where you are today.
 
 <nav class="paths" aria-label="Choose your path">
 <ul>
@@ -39,8 +30,5 @@ Pick the path that matches where you are today.
 </nav>
 
 ---
-
-These pages are a **starting point** — the organisation running your event may
-have tailored them, translated them, or added their own guidance.
 
 *Powered by [Samvinas](https://samvinas.com).*
