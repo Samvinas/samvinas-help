@@ -7,7 +7,7 @@ Samvinas is designed to support small group problem solving. We imagine you usin
 - **Paper and pen** (running it with markers, sticky notes and wall space),
 - **When & why** (deciding what to do, and when).
 
-We have arrange the content into three paths. Pick the path that matches where you are today.
+We have arranged the content into three paths. Pick the path that matches where you are today.
 
 <nav class="paths" aria-label="Choose your path">
 <ul>
