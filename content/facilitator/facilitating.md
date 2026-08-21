@@ -5,6 +5,8 @@ handful of habits. Here are the six we keep returning to — in a Samvinas
 event, or any meeting at all. The bold line in each section is the habit;
 the rest is the reasoning, there when you want it.
 
+One key point we need to highlight is that there can be a big difference between facilitating a meeting where you are an outsider and facilitating of meeting of your direct colleagues. The principles still apply, but you will need to think carefully about your role. For instance, are you able to be a neutral party in the conversations? If not, then you may - at the very least - want to be the person who speaks last, or who contributes their ideas anonymously. Alternatively, you might ask someone outside your group to act as the facilitator, so that you can fully participate. Facilitating your colleagues is not an insurmountable challenge, but it does benefit from some forethought.
+
 If it's a single tool you're about to facilitate, you want
 [the toolbox](/facilitator/) instead: **every tool's page carries its own
 facilitation guidance** — the *When & why* tab is the judgment call (when to
