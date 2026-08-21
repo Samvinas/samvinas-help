@@ -1,20 +1,18 @@
 # Setting up an event
 
-The mechanics, end to end. This page assumes you know what you want the session
-to *do* — it covers how to make Samvinas do it.
+This page assumes you know what you want the session to *do*, and you are looking for guidance on how to configure Samvinas to do it.
 
 ## 1. Create the event
 
-Sign in, choose **New event**, give it a name. Start from a blank flow or one of
-your saved templates.
+Sign in, choose **New event**, and give your event a name. You will be invited to either start from a blank flow or select one of
+your saved templates. If this is the first time using the system, or you have never saved a previous event as a template, you will only have the blank event as an option.
 
-Every event gets a five-character **join code** and a QR code. Participants need
-neither an account nor an app.
+Every event receives a randomly generated five-character **join code** and a QR code. Participants join the event by either entering the code, or snapping the QR code. This is important because it means that your colleagues need neither an account nor an app.
 
 ## 2. Build the flow
 
-The flow is the ordered list of tools your session moves through — for example
-**Brainstorm → Voting → Clustering**.
+The flow is the ordered list of tools you want your session to move through — for example
+**Brainstorm → Voting → Clustering**.  Flows are completely dynamic. You can add or remove tools as you go. 
 
 Add tools with the **+** button. Each row shows the tool's icon, name, a live
 item count, a **⚙** for settings and a **Focus** button. Clicking a tool's
