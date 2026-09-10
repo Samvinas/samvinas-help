@@ -55,5 +55,6 @@ group isn't yet sure it's solving the right problem.
 A **template** is a saved flow. When you create an event you can start from
 one instead of a blank flow — a design you've saved yourself, or one your
 organisation shares with everyone. And it works in both directions: when you
-build a session that works, **save it as a template** (event settings →
-Template) so the design is there waiting the next time you need it.
+build a session that works, **save it as a template** (the **⋯** menu at the
+top right of the session view) so the design is there waiting the next time
+you need it.

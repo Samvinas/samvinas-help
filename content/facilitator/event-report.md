@@ -9,8 +9,8 @@ the permanent record of the session.
 
 ## Creating it
 
-1. Open your event's **Settings** (the gear on the session view).
-2. Choose **Export Report**. Generation takes a moment while the data is
+1. On the session view, open the **⋯** menu at the top right.
+2. Choose **Export report**. Generation takes a moment while the data is
    gathered.
 3. The file downloads as `<Event-Name>-report.html`.
 
