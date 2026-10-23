@@ -5,9 +5,16 @@ a way of developing an idea rather than debating it: first what's good, then
 what it could become, then what worries you, and finally how to answer those
 worries.
 
+## Reading the feedback on an idea
+
+Click an idea in the list to open its feedback: the pluses, potentials,
+concerns and the overcomes under each concern. Click it again to close it.
+You can open any idea, so a team can look at what the group said about its
+own idea, and about the others.
+
 ## How to take part
 
-- Open an idea card and add your thoughts to its sections:
+- Click **Feedback** beside an idea and add your thoughts to its sections:
   - **Pluses** — what's genuinely good about this idea?
   - **Potentials** — what might it lead to if it worked?
   - **Concerns** — what worries you? Phrase it as a question:
