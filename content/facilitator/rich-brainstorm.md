@@ -9,8 +9,8 @@ notes. Still **divergent**; the ideas are just bigger.
 - Set an open **Prompt**, as with Brainstorm.
 - Let people know they can format with Markdown and sketch by typing
   `/sketch` — many won't discover it unprompted.
-- Otherwise run it like Brainstorm: keep it open, encourage quantity, lock it
-  when you're ready to converge.
+- Otherwise run it like Brainstorm: keep it open, encourage quantity, set it
+  to **View** when you're ready to converge.
 
 Rich Brainstorm produces `idea` items like any brainstorm; consuming tools
 (Voting, Ranking) show a "more" button, so rich ideas stay readable when you

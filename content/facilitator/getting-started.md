@@ -125,7 +125,12 @@ Two things worth setting before people arrive:
 
 - **Visibility** — new tools stay hidden until you reveal them, so the room
   sees one step at a time.
-- **Lock** — freezes a tool's responses without hiding what is already there.
+- **Who can change what** — each tool's **Settings** tab has *Everyone can:
+  View · Add · Edit · Delete*. New tools start at **Add**: people add their
+  own and can fix or remove their own. **Edit** lets everyone improve and
+  merge anyone's ideas; **Delete** lets them remove anyone's too (it goes to
+  the trash, with Undo). **View** freezes the tool without hiding what is
+  already there.
 
 ## 6. Run it
 

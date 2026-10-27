@@ -9,9 +9,11 @@ list at once. It's usually the opening, **divergent** step of a flow.
   process: *"I wish…"* / *"It would be great if…"* for surfacing goals early
   on; *"How might we…?"* / *"In what ways might we…?"* for generating ideas
   against a chosen problem; *"What might be all the…?"* to widen a hunt.
-- Keep it visible and unlocked while ideas flow. Encourage quantity out loud.
+- Keep it visible and at **Add** while ideas flow. Encourage quantity out loud.
+- Working like a small team round shared paper? Set it to **Edit** so people
+  can improve each other's wording and merge duplicates.
 - Watch the list; if it stalls, offer a fresh angle or a provocation.
-- When you're ready to converge, **Lock** it and pipe the ideas into the next
+- When you're ready to converge, set it to **View** and pipe the ideas into the next
   tool (e.g. Voting, Clustering, or Value/Doability).
 
 Brainstorm produces `idea` items. Any downstream tool can consume them — add the
