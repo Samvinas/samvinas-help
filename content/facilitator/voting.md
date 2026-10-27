@@ -10,7 +10,7 @@ favourites in real time. A first cut, not a final decision.
   third of the number of items.
 - Put a clear criterion in the **Prompt** ("Which three would have the biggest
   impact?").
-- Watch the live ranking; **Lock** when voting's done.
+- Watch the live ranking; set it to **View** when voting's done.
 
 Voting adds vote counts to items, so a downstream tool can filter by a minimum
 number of votes (e.g. only items with two or more votes flow into Value /
