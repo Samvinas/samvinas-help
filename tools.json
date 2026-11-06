@@ -39,6 +39,13 @@
           ]
         },
         {
+          "group": "Warm-ups",
+          "items": [
+            "find-my-people",
+            "vote-with-your-feet"
+          ]
+        },
+        {
           "group": "Shaping the event",
           "items": [
             "breakout-groups",
@@ -67,6 +74,13 @@
       "title": "Taking part",
       "href": "/index.html",
       "items": [
+        {
+          "group": "Warm-ups",
+          "items": [
+            "find-my-people",
+            "vote-with-your-feet"
+          ]
+        },
         {
           "group": "Shaping the event",
           "items": [
@@ -127,6 +141,12 @@
       "name": "Clustering",
       "mode": "organising",
       "blurb": "Group related ideas into themes."
+    },
+    {
+      "slug": "group-sort",
+      "name": "Group Sort",
+      "mode": "organising",
+      "blurb": "Everyone sorts the ideas into groups on their own; see the groups you agree on."
     },
     {
       "slug": "value-doability",
@@ -268,6 +288,18 @@
       "name": "Importer",
       "mode": "generating",
       "blurb": "Paste in a starting set of ideas."
+    },
+    {
+      "slug": "find-my-people",
+      "name": "Find My People",
+      "warmup": true,
+      "blurb": "Ask a question; each answer becomes a colour, and the room finds its people."
+    },
+    {
+      "slug": "vote-with-your-feet",
+      "name": "Vote With Your Feet",
+      "warmup": true,
+      "blurb": "Everyone stands somewhere on a line between two views; reveal where people are."
     }
   ]
 }

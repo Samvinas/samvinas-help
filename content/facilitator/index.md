@@ -42,6 +42,16 @@ they make:
 A well-shaped session alternates between them: diverge with a generating
 tool, then organise or converge with what came out — and repeat.
 
+### Warm-ups
+
+Two short activities for the start of a session, or after a break:
+
+- **[Find My People](/facilitator/find-my-people.html)** — ask a question;
+  each answer becomes a colour, and the room finds its people.
+- **[Vote With Your Feet](/facilitator/vote-with-your-feet.html)** — everyone
+  places themselves on a line between two views, then you reveal where people
+  stand.
+
 ### Shaping the event
 
 Three tools shape the session rather than the ideas in it:
