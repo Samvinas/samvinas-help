@@ -74,13 +74,18 @@ moves every idea forward at every step. Put a filter of **≥2 votes** on the
 pipe into Clustering, and only the ideas the room actually backed get sorted —
 so eighty ideas become the fifteen worth arranging.
 
-Click a filter row (in **⚙ → Basics → Filters**) to open it. There are four
+Click a filter row (in **⚙ → Basics → Filters**) to open it. There are five
 kinds of filter, and they stack — an item has to satisfy *all* of the ones you
 set to come through:
 
 ![The filter dialog for a pipe from Voting. Minimum votes is set to 2. Below it: Maximum votes, a Sequence range with From and To boxes, "Contains any of these words" for comma-separated text matching, and "Only items tagged" for filtering by tag. Cancel, Clear All and Save buttons sit at the foot.](/assets/images/screenshots/pipe-filter-editor.png)
 
 - **Minimum / maximum votes** — the workhorse. "Only what the group backed."
+- **Top N by votes** — "only the top three", whatever the totals turn out to
+  be, so you don't have to guess a vote threshold in advance. Ties at the
+  cut-off all come through, so "top 3" can bring four; items nobody voted for
+  never do. It's applied last, so it picks the top N of whatever the other
+  filters let through.
 - **Sequence range** — by item number, so `1–10` takes the first ten. Note it
   counts the items that have already passed the *other* filters, not the first
   ten in the source: combine "≥2 votes" with "1–10" and you get the first ten

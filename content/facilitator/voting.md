@@ -14,7 +14,8 @@ favourites in real time. A first cut, not a final decision.
 
 Voting adds vote counts to items, so a downstream tool can filter by a minimum
 number of votes (e.g. only items with two or more votes flow into Value /
-Doability).
+Doability), or take just the **top N by votes** (e.g. the three most-backed
+ideas go on to Elaboration; ties at the cut-off all come through).
 
 ## Paper and pen
 
