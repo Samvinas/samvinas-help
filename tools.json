@@ -197,6 +197,12 @@
       "blurb": "Brainstorm with formatting and freehand sketches."
     },
     {
+      "slug": "scenario-generator",
+      "name": "Scenario Generator",
+      "mode": "generating",
+      "blurb": "Collect ideas under a few headings, then combine one from each into scenarios."
+    },
+    {
       "slug": "tagging",
       "name": "Tagging",
       "mode": "organising",
