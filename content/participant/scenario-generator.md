@@ -27,11 +27,13 @@ idea from each heading into a scenario for you to explore.
 - You can delete a scenario you made, and edit or delete your own responses,
   from the ⋯ menu.
 
-**In a breakout group**
+**If you see an Ideas / Scenarios switch**
 
-- There is an **Ideas / Scenarios** switch at the top. Move between the two
-  whenever you like. Switching only changes your own screen, so you won't
-  interrupt anyone else in the group.
+- In a breakout group, or when the facilitator has turned it on, there is an
+  **Ideas / Scenarios** switch at the top. Move between the two whenever you
+  like, for example to add an idea you have just thought of.
+- Switching only changes your own screen, so you won't interrupt anyone
+  else.
 
 ## Tips
 

@@ -32,12 +32,16 @@ combinations that nobody in the room would have chosen on purpose.
   the **Add** button, or Ctrl+Enter, sends it.
 - A card keeps its own copy of the words. If someone edits or deletes an idea
   later, the scenarios already made from it don't change.
-- **To add more ideas after generating**, change *Stage* back to
-  **Collect ideas**. The scenarios are kept, and they reappear when you
-  switch forward again.
+- **To let people add more ideas after generating**, change *Stage* to
+  **Both, people choose**. Everyone gets an **Ideas / Scenarios** switch at
+  the top of the tool and moves between the two when they like. People stay
+  on the page they were on, and switching only changes their own screen.
+- To bring the whole room back to one page, change *Stage* to
+  **Collect ideas** or **Generate scenarios**. Nothing is lost either way.
 - **The projector** shows the ideas in a column per heading while you are
   collecting, and the scenario cards with their responses once you are
-  generating.
+  generating. In **Both**, it shows the ideas until the first scenario is
+  made, then the scenarios.
 - **The Data tab** shows you every idea and every scenario. You can edit or
   delete anything there from the ⋯ menu.
 - **Later steps receive the scenarios**, each as one line
@@ -47,9 +51,8 @@ combinations that nobody in the room would have chosen on purpose.
   behind.
 - **In breakout groups**, add the tool to the group template and set its
   headings there. A group has no facilitator to change the stage, so each
-  person gets an **Ideas / Scenarios** switch at the top of the tool and moves
-  across when they are ready. The *Stage* setting decides which side opens
-  first.
+  person always has the **Ideas / Scenarios** switch and moves across when
+  they are ready. The *Stage* setting decides which side opens first.
 - The event report and the CSV export list the ideas under each heading, then
   each scenario with its responses.
 
