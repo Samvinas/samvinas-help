@@ -37,7 +37,7 @@ idea from each heading into a scenario for you to explore.
 
 ## Tips
 
-- **Go for quantity while collecting.** The more ideas under each heading,
+- **Seek quantity while collecting.** The more ideas under each heading,
   the more varied the scenarios.
 - **Add the odd ones.** An unusual idea often makes the most interesting
   scenario.

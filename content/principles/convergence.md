@@ -6,19 +6,24 @@ creativity — it is the half that turns creativity into outcomes. Done badly,
 it undoes the divergence that preceded it; done well, it leaves the group
 confident in its choices *and* glad it generated wildly.
 
-## Principles for converging well
+## The four guidelines
 
-1. **Be affirmative first.** Start from what is promising rather than what
-   is wrong. Screening for fatal flaws gets its turn later; strengthening
-   comes first — which is what [PPCO](/facilitator/ppco.html) exists for.
-2. **Be deliberate.** Choose with explicit criteria or explicit
-   preferences — voting, ranking, scoring — rather than by whoever talks
-   longest.
-3. **Check the wild ones before discarding them.** Novelty is exactly what
-   you diverged for; don't let "unusual" be read as "unworkable".
-4. **Don't converge too early.** This is the commonest failure: the group
-   grabs the first workable idea and stops. If the list still feels obvious,
-   diverge again.
+1. **Use affirmative judgment.** Start from what is promising rather than
+   what is wrong. Screening for fatal flaws gets its turn later;
+   strengthening comes first — which is what [PPCO](/facilitator/ppco.html)
+   exists for.
+2. **Check objectives.** Keep the goal in view: does this option serve what
+   you set out to do? Choose against explicit criteria — voting, ranking,
+   scoring — rather than by whoever talks longest.
+3. **Seek novelty.** Novelty is exactly what you diverged for; don't let
+   "unusual" be read as "unworkable", or let the familiar option win by
+   default.
+4. **Improve on options.** Strengthen promising options before choosing
+   between them; a flaw is a problem to solve, not a reason to drop the idea.
+
+And don't converge too early. It's the commonest failure: the group grabs
+the first workable idea and stops. If the list still feels obvious, diverge
+again.
 
 ## Highlighting: hits, clusters, restatements
 

@@ -46,5 +46,5 @@ we…?" rather than a topic heading. And in [PPCO](/facilitator/ppco.html) and
 its relatives, concerns are phrased as questions precisely so they can be
 *overcome* rather than merely recorded.
 
-Framing and [deferring judgement](/principles/deferring-judgement.html) are
+Framing and [delaying judgment](/principles/deferring-judgement.html) are
 partners: one keeps the door open, the other keeps ideas walking through it.

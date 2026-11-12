@@ -93,7 +93,7 @@ all have this shape.
 - **Fill every list before you switch.** A list with two ideas in it makes
   every scenario feel the same. Aim for eight or more under each heading.
 - **Collecting is still a brainstorm**, so
-  [defer judgement](/principles/deferring-judgement.html) and go for quantity.
+  [delay judgment](/principles/deferring-judgement.html) and seek quantity.
   The odd idea is often the one that makes a scenario interesting.
 - **A strange combination is a constraint, and constraints help.** Ask the
   group to make each scenario work, not to say whether it is a good one.

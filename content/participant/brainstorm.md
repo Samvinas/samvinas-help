@@ -1,10 +1,10 @@
 # Brainstorm
 
 You'll see a box to type ideas and a growing list of everyone's contributions.
-Add as many as you can — quantity first, judgement later.
+Add as many as you can — quantity first, judgment later.
 
 > No idea is judged while the list is open — that comes later, and separately.
-> Go for quantity, and build on what others have written.
+> Seek quantity, and build on other ideas.
 
 ## How to take part
 
@@ -17,18 +17,18 @@ Add as many as you can — quantity first, judgement later.
 This is the **divergent** part of the process, where we widen the field of
 possibilities.
 
-![Creative work alternates between two phases: diverging to generate many options, then converging to make choices.](/assets/images/diagrams/diverge-converge.svg)
+![Creative work alternates between two kinds of thinking: divergent thinking generates new options, fanning out from one point to many; convergent thinking selects the best option, bringing many back to one.](/assets/images/diagrams/diverge-converge.svg)
 
 Four habits make it work:
 
-1. **Defer judgement.** No idea is criticised yet — that comes later. Nothing
+1. **Delay judgment.** No idea is criticised yet — that comes later. Nothing
    shuts down a group faster than "that won't work."
-2. **Go for quantity.** More ideas means more raw material to choose from. Aim
+2. **Build on other ideas.** Use "yes, and…" thinking — treat every post as a
+   springboard.
+3. **Seek wild and unusual.** The unusual and the impractical often carry the
+   seed of something brilliant. It's easier to tame a wild idea than to
+   invigorate a safe one.
+4. **Seek quantity.** More ideas means more raw material to choose from. Aim
    for a long list.
-3. **Welcome wild ideas.** The unusual and the impractical often carry the seed
-   of something brilliant. It's easier to tame a wild idea than to invigorate a
-   safe one.
-4. **Build on the ideas of others.** Use "yes, and…" thinking — treat every
-   post as a springboard.
 
 > There'll be a later step to sort, combine, and choose. For now, let it flow.

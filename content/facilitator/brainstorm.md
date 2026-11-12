@@ -40,7 +40,7 @@ Reach for Brainstorm when the group needs **many options before choosing any** �
 wishes and goals early in the process, ideas once a problem is framed, possible
 actions near the end.
 
-> While the field is open, [defer judgement](/principles/deferring-judgement.html) —
+> While the field is open, [delay judgment](/principles/deferring-judgement.html) —
 > evaluation is postponed, not abandoned, and it belongs in a focusing tool later.
 
 - Quantity breeds quality: a strong session can reach forty ideas — and the

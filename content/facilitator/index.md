@@ -22,7 +22,7 @@ teaching it from scratch.
 - **[Facilitating the room](/facilitator/facilitating.html)** — six habits
   that carry most of the weight.
 - **[Principles refresher](/principles/)** — diverge and converge, the four
-  stages, deferring judgement, framing problems as questions.
+  stages, delaying judgment, framing problems as questions.
 - **[The process at a glance](/principles/process-at-a-glance.html)** — six
   steps side by side, each with a starting condition and an outcome. Use it
   to decide where your event enters the process.
