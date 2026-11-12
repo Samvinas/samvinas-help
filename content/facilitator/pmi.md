@@ -45,7 +45,7 @@ starts. A few minutes per option is enough.
 
 > The Interesting column is the whole trick: it parks judgement for a moment
 > and surfaces what people would otherwise miss — the same move as
-> [deferring judgement](/principles/deferring-judgement.html), in miniature.
+> [delaying judgment](/principles/deferring-judgement.html), in miniature.
 
 - Insist on the Interesting column; it's the part that changes minds.
 - Keep it quick — momentum matters more than completeness.

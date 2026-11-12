@@ -44,7 +44,7 @@ with [Clustering](/facilitator/clustering.html) instead.
 
 - Two to four buckets is the sweet spot; beyond six, choosing a bucket starts
   to compete with having ideas.
-- It's still a brainstorm — [defer judgement](/principles/deferring-judgement.html)
+- It's still a brainstorm — [delay judgment](/principles/deferring-judgement.html)
   inside every bucket.
 - What usually follows: a different next step per bucket — often
   [Voting](/facilitator/voting.html) within each category, or

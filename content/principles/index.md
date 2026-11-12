@@ -13,7 +13,7 @@ Every piece of creative work alternates between two moves — first
 **widening** the field of options, then **narrowing** it to choices. Doing
 both *at the same time* is what kills most meetings.
 
-![Creative work alternates between two phases: diverging to generate many options, then converging to make choices.](/assets/images/diagrams/diverge-converge.svg)
+![Creative work alternates between two kinds of thinking: divergent thinking generates new options, fanning out from one point to many; convergent thinking selects the best option, bringing many back to one.](/assets/images/diagrams/diverge-converge.svg)
 
 - **[Divergence](/principles/divergence.html)** — generating many options
   before judging any of them.
@@ -38,7 +38,7 @@ around the same stages.
 
 ## Two habits that make it work
 
-- **[Deferring judgement](/principles/deferring-judgement.html)** — why
+- **[Delaying judgment](/principles/deferring-judgement.html)** — why
   evaluation is postponed, not abandoned, and what that does to a group.
 - **[Framing problems as questions](/principles/problems-as-questions.html)**
   — turning verdicts into invitations: *"How might we…?"*

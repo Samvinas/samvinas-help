@@ -17,6 +17,6 @@ ideas go straight into the category they belong to (for example *Helps* and
 
 - **Quantity first** — a rough idea in the right bucket now beats a polished
   one after the moment has passed.
-- **Defer judgement** — no idea gets criticised at this stage.
+- **Delay judgment** — no idea gets criticised at this stage.
 - **Build on others** — reply to what you see with a "yes, and…" idea of your
   own.

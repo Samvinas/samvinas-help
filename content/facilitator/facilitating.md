@@ -71,7 +71,7 @@ seconds of quiet. Silence is thinking, not failure.
 
 Two things are in your keeping for the whole event. The first is the ground
 rules: you hold the group to
-[deferring judgement](/principles/deferring-judgement.html) while the field
+[delaying judgment](/principles/deferring-judgement.html) while the field
 is open, and to [affirmative-first choosing](/principles/convergence.html)
 when it narrows.
 
