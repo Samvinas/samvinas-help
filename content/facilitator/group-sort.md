@@ -29,8 +29,10 @@ method.
   on the Settings tab, participants can name them too.
 - Once the groups are final, the projector has four views: the named
   **Groups**, the **Tree** showing how the ideas joined, a **Similarity** map
-  with the most-agreed pairs, and **Ideas by group**. The event report and the
-  CSV export carry the same results.
+  with the most-agreed pairs, and **Ideas by group**. The Tree and the
+  Similarity map are sized to fit the screen, each in a white card with its
+  explanation; a very long tree scrolls instead of shrinking past a readable
+  size. The event report and the CSV export carry the same results.
 - **Later steps receive the groups by name.** Pipe Group Sort into Voting to
   vote on the themes. Nothing passes on until you finalise, and renaming a group
   afterwards keeps any votes on it. **Reopen** takes the groups back out of
