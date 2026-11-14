@@ -8,7 +8,7 @@ have and how **interested** they are.
 - For each stakeholder, set their position on both axes.
 - The map shows everyone's placements together.
 
-![The Stakeholder Map results view: Interest across the bottom, Influence up the side, each group a numbered dot coloured by how much the room agreed, with a numbered key beneath.](/assets/images/screenshots/stakeholder-map-scatter.png)
+![The Stakeholder Map results view: Interest across the bottom, Influence up the side, each group a numbered dot coloured by how much the room agreed (blue for high consensus, yellow for mixed views, red for wide disagreement), with a numbered list beneath, all in one white card.](/assets/images/screenshots/stakeholder-map-scatter.png)
 
 ## Tips
 

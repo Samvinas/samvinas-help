@@ -9,7 +9,7 @@ is it? The scores plot each idea on a grid.
 - The scatter plot shows where every idea lands, coloured by how much the group
   agrees.
 
-![The results view: a scatter plot with do-ability across the bottom and value up the side. Each idea is a numbered dot, coloured by how much the group agreed rather than by its score, with a numbered key beneath.](/assets/images/screenshots/value-doability-scatter.png)
+![The results view, in a white card: a scatter plot with do-ability across the bottom and value up the side. Each idea is a numbered dot, coloured by how much the group agreed rather than by its score: blue for high consensus, yellow for mixed views, red for wide disagreement. A numbered list beneath names each idea.](/assets/images/screenshots/value-doability-scatter.png)
 
 ## Reading the grid
 

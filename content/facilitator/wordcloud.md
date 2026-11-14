@@ -7,7 +7,10 @@ shared language.
 ## Samvinas
 
 - Pipe in a text-rich tool (Brainstorm, Rich Brainstorm).
-- Project it on the **Display** for the room.
+- Project it on the **Display** for the room. The words shrink if they need to,
+  so the whole cloud stays on screen without scrolling.
+- To put the cloud on a slide, open the tool's **⚙ → Data** tab and press
+  **Download word cloud (PNG)**. The image is landscape.
 
 Word Cloud consumes the text of whatever you pipe into it — the richer the
 source, the more the cloud has to say.

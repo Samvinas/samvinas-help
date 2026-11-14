@@ -9,7 +9,12 @@ people and groups on two axes (Influence / Interest by default). An
 - Pipe in the list of stakeholders (from a Brainstorm of "who's affected?").
 - Set the axis labels to fit your framework.
 
-![The Stakeholder Map results view: the same scatter plot with Interest across the bottom and Influence up the side. Six numbered dots spread across the quadrants, coloured blue, amber and orange according to how much the group agreed. A numbered key below names each stakeholder group.](/assets/images/screenshots/stakeholder-map-scatter.png)
+![The Stakeholder Map results view, in a white card: the same scatter plot with Interest across the bottom and Influence up the side. Six numbered dots spread across the quadrants, coloured blue, yellow or red according to how much the group agreed. Under the plot, a key names the three colours, and a numbered list names each stakeholder group.](/assets/images/screenshots/stakeholder-map-scatter.png)
+
+- On the **Display**, the map is sized to fit the screen; the numbered list
+  continues below it.
+- To put the map on a slide, open the tool's **⚙ → Data** tab and press
+  **Download chart (PNG)**.
 
 ## Paper and pen
 

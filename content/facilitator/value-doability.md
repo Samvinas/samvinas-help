@@ -12,10 +12,16 @@ you've generated and grouped ideas.
 - Give people time — the Submit bar sits at the bottom of the list.
 
 The results view plots every idea on the two axes. Dot colour is agreement, not
-score — orange means the room is split, which is usually the more interesting
-conversation.
+score: blue is high consensus, yellow is mixed views, and red means the room is
+split, which is usually the more interesting conversation.
 
-![The Value / Doability results view: a scatter plot with do-ability across the bottom and value up the side, the high-value high-do-ability quadrant tinted green. Six numbered dots are placed across the grid; four are blue for high consensus and two orange for wide disagreement. A numbered key below lists each idea with its response count.](/assets/images/screenshots/value-doability-scatter.png)
+![The Value / Doability results view, in a white card: a scatter plot with do-ability across the bottom and value up the side, the high-value high-do-ability quadrant tinted green. Six numbered dots are placed across the grid; four are blue for high consensus and two red for wide disagreement. Under the plot, a key names the three colours, and a numbered list gives each idea with its response count.](/assets/images/screenshots/value-doability-scatter.png)
+
+- On the **Display**, the plot is sized to fit the screen; the numbered list
+  continues below it.
+- To put the chart on a slide, open the tool's **⚙ → Data** tab and press
+  **Download chart (PNG)**. The image has the plot, the colour key and the
+  numbered list.
 
 Value / Doability consumes idea items from an earlier tool — connect its
 **Source** and, if you voted first, filter to the items with enough votes.
