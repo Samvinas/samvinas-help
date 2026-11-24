@@ -125,6 +125,12 @@
       "blurb": "Collect lots of ideas quickly."
     },
     {
+      "slug": "links",
+      "name": "Links",
+      "mode": "generating",
+      "blurb": "Gather useful web pages, each with a title."
+    },
+    {
       "slug": "voting",
       "name": "Voting",
       "mode": "focusing",
