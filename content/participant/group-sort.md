@@ -8,6 +8,8 @@ runs it in one of two ways.
 Everyone sees the same board, and it changes live as cards move. A group
 flashes when a card has just gone into it.
 
+![The shared Group Sort board as the room sees it: a summary line reads "2 groups · 2 not grouped yet". Two named groups sit side by side, "People and support" with three cards and "Ways of working" with two, and a dashed "Not grouped yet" pile holds the two cards nobody has placed.](/assets/images/screenshots/group-sort-board.png)
+
 - **If you're watching:** the facilitator moves the cards, usually on the
   projector. Follow along and suggest where cards belong.
 - **If you can move cards:** pick a card, then choose **Put it here** on a
