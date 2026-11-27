@@ -33,6 +33,8 @@ step's **Settings** tab, under *How people sort*:
 - **Clear the board…** on the Data tab puts every card back in the pile and
   deletes the groups.
 
+![The shared Group Sort board as the room sees it: a summary line reads "2 groups · 2 not grouped yet". Two named groups sit side by side, "People and support" with three cards and "Ways of working" with two, and a dashed "Not grouped yet" pile holds the two cards nobody has placed.](/assets/images/screenshots/group-sort-board.png)
+
 ## Samvinas: everyone on their own
 
 - Pipe in the ideas (e.g. from Brainstorm). The first line of each idea becomes
