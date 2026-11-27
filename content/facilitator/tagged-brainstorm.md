@@ -40,7 +40,7 @@ marker to head each sheet, and sticky notes and pens for everyone.
 Use it when the categories are known **before** ideas start flowing — the
 buckets steer the group's attention. If you want themes to *emerge* from the
 ideas, run a plain [Brainstorm](/facilitator/brainstorm.html) and follow it
-with [Clustering](/facilitator/clustering.html) instead.
+with [Group Sort](/facilitator/group-sort.html) instead.
 
 - Two to four buckets is the sweet spot; beyond six, choosing a bucket starts
   to compete with having ideas.
@@ -48,7 +48,7 @@ with [Clustering](/facilitator/clustering.html) instead.
   inside every bucket.
 - What usually follows: a different next step per bucket — often
   [Voting](/facilitator/voting.html) within each category, or
-  [Clustering](/facilitator/clustering.html) if a bucket grew large.
+  [Group Sort](/facilitator/group-sort.html) if a bucket grew large.
 
 ---
 

@@ -69,7 +69,7 @@ it, restate it.
 [generating tools](/facilitator/tools-generating.html), then
 [Voting](/facilitator/voting.html),
 [Ranking](/facilitator/ranking.html) or
-[Clustering](/facilitator/clustering.html).
+[Group Sort](/facilitator/group-sort.html).
 
 ## 5 · Develop solutions
 

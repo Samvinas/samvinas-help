@@ -45,7 +45,7 @@ narrowing it.
   quiet, deliberate participants often do their best work here.
 - What usually follows: a shared pooling step — a
   [Brainstorm](/facilitator/brainstorm.html) where people post their best
-  items, or [Clustering](/facilitator/clustering.html) to organise what
+  items, or [Group Sort](/facilitator/group-sort.html) to organise what
   comes back.
 
 ---

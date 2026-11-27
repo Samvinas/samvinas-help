@@ -25,7 +25,7 @@ asking participants to brainstorm a list you already have.
   visible in its **Settings** tab. They get a read-only view — looking is
   fine, adding still goes through you.
 
-Connect the next tool (Voting, Clustering, PPCO…) to the Importer as its
+Connect the next tool (Voting, Group Sort, PPCO…) to the Importer as its
 source — tools added straight after it connect automatically — and the pasted
 ideas flow downstream like any brainstormed ones.
 
@@ -60,7 +60,7 @@ the work only they can do: judging, clustering, developing.
 - Seeded ideas are a floor, not a ceiling — pair it with a
   [Brainstorm](/facilitator/brainstorm.html) if you also want fresh thinking.
 - What usually follows: almost anything — [Voting](/facilitator/voting.html)
-  or [Clustering](/facilitator/clustering.html) to work the list, or
+  or [Group Sort](/facilitator/group-sort.html) to work the list, or
   [PPCO](/facilitator/ppco.html) to develop a single imported proposal.
 
 ---

@@ -1,5 +1,11 @@
 # Clustering — for facilitators
 
+> **Clustering has been replaced by [Group Sort](/facilitator/group-sort.html).**
+> For new steps, add Group Sort and set *How people sort* to **Together, on one
+> shared board**: it works like Clustering, and can also sort on everyone's own
+> devices and use AI help. Existing Clustering steps keep working, and this page
+> still describes them.
+
 Clustering makes sense of a big idea list by grouping related items into named
 themes. It's an **organising** tool — a natural bridge from divergence to
 convergence.

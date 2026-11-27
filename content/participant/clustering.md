@@ -1,5 +1,8 @@
 # Clustering
 
+> Newer sessions use [Group Sort](/participant/group-sort.html) for this. If
+> your session has a Clustering step, this page describes it.
+
 Group ideas that belong together and give each group a name. It turns a long
 list into a handful of themes.
 

@@ -1,10 +1,26 @@
 # Group Sort
 
-Sort the ideas into groups of ideas that belong together. Everyone sorts on
-their own, and Samvinas combines the sorts to find the groups most people
-agree on.
+Sort the ideas into groups of ideas that belong together. Your facilitator
+runs it in one of two ways.
 
-## How to take part
+## Sorting together, on one shared board
+
+Everyone sees the same board, and it changes live as cards move. A group
+flashes when a card has just gone into it.
+
+- **If you're watching:** the facilitator moves the cards, usually on the
+  projector. Follow along and suggest where cards belong.
+- **If you can move cards:** pick a card, then choose **Put it here** on a
+  group, or start a new group with it. You can also drag cards. On a phone, tap
+  a card to see where it can go.
+- Click a group's name to rename it, if your facilitator allows it.
+- Cards still in the *Not grouped yet* pile are fine. Not every idea has to
+  join a group.
+
+## Sorting on your own
+
+Everyone sorts on their own, and Samvinas combines the sorts to find the groups
+most people agree on.
 
 - **On a phone** you see one card at a time. Tap the group it belongs with, or
   **Start a new group**. **Skip for now** puts the card back at the end of the
@@ -20,8 +36,10 @@ agree on.
 ## Tips
 
 - There's no right answer. Group the ideas the way that makes sense to you.
-- Your groups don't need names. The facilitator names the shared groups later.
 - If a card doesn't fit anywhere, give it a group of its own. A "miscellaneous"
   group says those cards belong together, which isn't what you mean.
-- Your sort is anonymous. Nobody sees it but you.
-- Once the facilitator finalises the groups, they appear on your screen.
+- When sorting on your own, your groups don't need names, and your sort is
+  anonymous: nobody sees it but you. Once the facilitator finalises the shared
+  groups, they appear on your screen.
+- Sometimes the facilitator adds an AI's sort, or lets an AI make a first sort
+  of the shared board. It's always labelled, and the room decides what stays.

@@ -47,7 +47,7 @@ ground (one problem per group, or many angles on one).
   enough that everyone speaks.
 - What usually follows: **Gather Results**, then a whole-room focusing tool —
   [Voting](/facilitator/voting.html) across the combined harvest, or
-  [Clustering](/facilitator/clustering.html) to merge overlapping output.
+  [Group Sort](/facilitator/group-sort.html) to merge overlapping output.
 
 ---
 

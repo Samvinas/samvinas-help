@@ -9,7 +9,7 @@ to the goal. An **organising** tool: it sequences without cutting anything.
 
 - First, help the group converge on the **desired future state**, then run a
   brainstorm — "In order to have achieved this, what must have happened?" —
-  and optionally tidy the steps with Voting or Clustering.
+  and optionally tidy the steps with Voting or Group Sort.
 - Pipe those steps into Backcasting. In its settings, paste the **desired
   future state** (it shows as the anchor at the top) and set the number of
   time blocks if ten isn't right.

@@ -43,7 +43,7 @@ them.
   need to prioritise.
 - Watch for the word that *isn't* there — the theme everyone expected but
   nobody wrote is worth naming out loud.
-- What usually follows: [Clustering](/facilitator/clustering.html) to turn the
+- What usually follows: [Group Sort](/facilitator/group-sort.html) to turn the
   surfaced themes into named groups, or [Voting](/facilitator/voting.html) to
   start converging on the underlying ideas.
 

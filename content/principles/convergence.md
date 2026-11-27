@@ -34,7 +34,7 @@ The workhorse of convergence is a small three-step move called highlighting:
    the problem, or it simply keeps pulling your eye back. Trust that pull;
    analysis gets its turn later.
 2. **Cluster the related hits.** Group the hits that point the same way —
-   [Clustering](/facilitator/clustering.html) makes this a shared activity.
+   [Group Sort](/facilitator/group-sort.html) makes this a shared activity.
 3. **Restate each cluster.** Give every cluster a name that *does*
    something: a verb phrase ("pilot the scheme with two teams"), or — when
    you're clarifying — a fresh

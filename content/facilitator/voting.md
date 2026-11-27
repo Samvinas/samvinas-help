@@ -5,7 +5,7 @@ favourites in real time. A first cut, not a final decision.
 
 ## Samvinas
 
-- Pipe in the items to vote on (usually from Brainstorm or Clustering).
+- Pipe in the items to vote on (usually from Brainstorm or Group Sort).
 - Set the **max votes per person** in settings — a good rule of thumb is about a
   third of the number of items.
 - Put a clear criterion in the **Prompt** ("Which three would have the biggest

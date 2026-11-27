@@ -14,11 +14,32 @@ list at once. It's usually the opening, **divergent** step of a flow.
   can improve each other's wording and merge duplicates.
 - Watch the list; if it stalls, offer a fresh angle or a provocation.
 - When you're ready to converge, set it to **View** and pipe the ideas into the next
-  tool (e.g. Voting, Clustering, or Value/Doability).
+  tool (e.g. Voting, Group Sort, or Value/Doability).
 
 Brainstorm produces `idea` items. Any downstream tool can consume them — add the
 next tool and connect its **Source** to this one, optionally filtering by votes
 or sequence range.
+
+## AI suggestions
+
+Switch on **AI suggestions** on the step's Settings tab to give each person a
+private tray of AI ideas, beside the shared list. Nothing reaches the room
+until its owner ticks it and presses **Share selected**. Shared ideas are
+marked as AI-assisted, so everyone can see an AI helped.
+
+- **Use your own AI.** Everyone gets this. It copies a prompt holding the
+  question and the person's own ideas (nobody else's) to paste into any AI they
+  already use: Claude, ChatGPT, Gemini and so on. They paste the reply back,
+  and each line becomes a suggestion in their tray. These suggestions stay in
+  their browser until they share one.
+- **✨ Suggest ideas.** If your organisation has **Samvinas AI** switched on,
+  people can also ask Samvinas's own AI for a few ideas with one press. It sees
+  the question and the person's own ideas, never anyone else's.
+- Switch it off again whenever you like. It's off by default.
+
+AI ideas are raw material, like anyone else's: the room still decides what's
+worth keeping. They're most useful when the list stalls, or to widen a list
+that keeps circling the same few themes.
 
 ## Paper and pen
 
@@ -52,7 +73,7 @@ actions near the end.
   [Breakout Groups](/facilitator/breakout-groups.html) spread participation.
 - What usually follows: a focusing tool ([Voting](/facilitator/voting.html),
   [Ranking](/facilitator/ranking.html)) to converge, or
-  [Clustering](/facilitator/clustering.html) to make sense of the field first.
+  [Group Sort](/facilitator/group-sort.html) to make sense of the field first.
 
 ---
 

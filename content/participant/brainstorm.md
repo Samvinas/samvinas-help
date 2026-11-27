@@ -12,6 +12,20 @@ Add as many as you can — quantity first, judgment later.
 - Every idea is visible to the group as it arrives.
 - Build on what others have posted — combine two ideas, or take one further.
 
+## AI suggestions
+
+If your facilitator has switched on AI suggestions, you'll see a tray marked
+*only you can see these* below the box where you type.
+
+- **Use your own AI:** open it and copy the prompt. It holds the question and
+  your own ideas, nobody else's. Paste it into the AI you use (Claude, ChatGPT,
+  Gemini…), then paste the AI's reply back and press **Add to my tray**. Each
+  line becomes a suggestion.
+- **✨ Suggest ideas**, if you see it, asks Samvinas's own AI for a few ideas.
+- Tick the suggestions worth keeping and press **Share selected**. They join
+  the list marked as AI-assisted. The rest stay private: dismiss them with ×,
+  or **Dismiss all**. **Hide suggestions** folds the tray away.
+
 ## Ground rules for great ideas
 
 This is the **divergent** part of the process, where we widen the field of

@@ -37,7 +37,7 @@ think**, each given more time than feels comfortable.
 
 ## The classic shape
 
-If you're unsure, start here: **Brainstorm → Clustering → Voting.** Generate
+If you're unsure, start here: **Brainstorm → Group Sort → Voting.** Generate
 widely, group what emerged so the room can see its own thinking, then choose
 together. It fits in an hour, it works with six people or sixty, and every
 part of it is forgiving — whatever the group produces, the next step can use.

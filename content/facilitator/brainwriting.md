@@ -47,7 +47,7 @@ simply thinks better in writing.
   equal terms.
 - The builds are the point: ideas that have passed through three hands are
   usually stranger and better than first thoughts.
-- What usually follows: [Clustering](/facilitator/clustering.html) to make
+- What usually follows: [Group Sort](/facilitator/group-sort.html) to make
   sense of the harvest, or [Voting](/facilitator/voting.html) to converge on it.
 
 ---

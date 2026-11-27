@@ -12,7 +12,7 @@ Every event receives a randomly generated five-character **join code** and a QR 
 ## 2. Build the flow
 
 The flow is the ordered list of tools you want your session to move through — for example
-**Brainstorm → Voting → Clustering**.  Flows are completely dynamic. You can add or remove tools as you go. 
+**Brainstorm → Voting → Group Sort**.  Flows are completely dynamic. You can add or remove tools as you go. 
 
 Add tools with the **+** button. Each row shows the tool's icon, name, a live
 item count, a **⚙** for settings and a **Focus** button. Clicking a tool's
@@ -38,7 +38,7 @@ a **pipe**.
 
 Think of it as handing a stack of cards to the next person in the room. The
 Brainstorm collects the cards. Voting takes that same stack and puts stars on
-them. Clustering takes the starred stack and sorts it into piles. Nobody
+them. Group Sort takes the starred stack and sorts it into piles. Nobody
 re-types anything, and nobody exports a spreadsheet in between.
 
 Three things are worth knowing, because they're what make pipes different from
@@ -52,9 +52,9 @@ the Brainstorm while Voting is open and it appears in Voting. You don't have to
 flow, never below. That's why the source list only offers earlier tools — and
 why reordering your flow can disconnect a pipe.
 
-**It chains.** If Clustering draws from Voting, and Voting draws from
-Brainstorm, then Clustering can see the Brainstorm's ideas through Voting.
-You don't need to connect Clustering to both.
+**It chains.** If Group Sort draws from Voting, and Voting draws from
+Brainstorm, then Group Sort can see the Brainstorm's ideas through Voting.
+You don't need to connect Group Sort to both.
 
 ### Setting a source
 
@@ -69,9 +69,9 @@ source, and they merge into a single incoming set.
 A pipe on its own passes everything. A **filter** is a sieve on that pipe —
 it decides which of the upstream items arrive.
 
-This is what turns a flow into a funnel. *Brainstorm → Voting → Clustering*
+This is what turns a flow into a funnel. *Brainstorm → Voting → Group Sort*
 moves every idea forward at every step. Put a filter of **≥2 votes** on the
-pipe into Clustering, and only the ideas the room actually backed get sorted —
+pipe into Group Sort, and only the ideas the room actually backed get sorted —
 so eighty ideas become the fifteen worth arranging.
 
 Click a filter row (in **⚙ → Basics → Filters**) to open it. There are five
@@ -113,8 +113,8 @@ something you can act on:
 |---|---|---|---|
 | 1 | Brainstorm | — | — |
 | 2 | Voting | Brainstorm | — |
-| 3 | Clustering | Voting | ≥2 votes |
-| 4 | Value / Doability | Clustering | — |
+| 3 | Group Sort | Voting | ≥2 votes |
+| 4 | Value / Doability | Group Sort | — |
 
 Eighty ideas in at step 1. Everyone votes at step 2. Step 3 only sees the
 backed ones, and turns fifteen into five themes. Step 4 scores those five
