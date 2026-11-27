@@ -146,13 +146,13 @@
       "slug": "clustering",
       "name": "Clustering",
       "mode": "organising",
-      "blurb": "Group related ideas into themes."
+      "blurb": "Replaced by Group Sort. Existing Clustering steps keep working."
     },
     {
       "slug": "group-sort",
       "name": "Group Sort",
       "mode": "organising",
-      "blurb": "Everyone sorts the ideas into groups on their own; see the groups you agree on."
+      "blurb": "Group ideas: together on one shared board, or everyone on their own and then combine the sorts."
     },
     {
       "slug": "value-doability",
